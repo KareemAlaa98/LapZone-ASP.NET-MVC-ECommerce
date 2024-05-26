@@ -1,0 +1,110 @@
+﻿@model E_Commerce_GP.ViewModels.UserViewModel
+
+@{
+    SelectList listOfRoles = new SelectList(ViewBag.listOfRoles, "RoleId", "RoleName");
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+<form asp-controller="Users" asp-action="@ViewData["action"]" method="post">
+    <div class="row">
+        <fieldset class="col-md-6">
+            <legend>Personal Information</legend>
+            <div class="row mb-3">
+                @* <input asp-for="Id" type="hidden"> *@
+                <div class="col">
+                    <label asp-for="FirstName" class="form-label">First Name</label>
+                    <input asp-for="FirstName" class="form-control">
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="LastName" class="form-label">Last Name</label>
+                    <input asp-for="LastName" class="form-control">
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="UserName" class="form-label">Username</label>
+                    <input asp-for="UserName" class="form-control">
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Password" class="form-label">Password</label>
+                    <input asp-for="Password" class="form-control">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="ConfirmPassword" class="form-label">Confirm Password</label>
+                    <input asp-for="ConfirmPassword" class="form-control">
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="col-md-6">
+            <legend>Address</legend>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Street" class="form-label">Street</label>
+                    <input asp-for="Street" class="form-control">
+                    <span asp-validation-for="Street" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="City" class="form-label">City</label>
+                    <input asp-for="City" class="form-control">
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Building_Number" class="form-label">Building Number</label>
+                    <input asp-for="Building_Number" class="form-control">
+                    <span asp-validation-for="Building_Number" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="Floor_Number" class="form-label">Floor Number</label>
+                    <input asp-for="Floor_Number" class="form-control">
+                    <span asp-validation-for="Floor_Number" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                    <input asp-for="PhoneNumber" class="form-control">
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <label asp-for="UserRoles" class="form-label">Roles</label>
+            <select asp-for="UserRoles" asp-items="listOfRoles" class="form-select" multiple></select>
+            <span asp-validation-for="UserRoles" class="text-danger"></span>
+        </div>
+        @* <div class="row mb-3">
+        <div class="col">
+            <label asp-for="Roles" class="form-label">Roles</label>
+            <select asp-for="Roles" asp-items="listOfRoles" class="form-select" multiple></select>
+            <span asp-validation-for="Roles" class="text-danger"></span>
+        </div> *@
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</form>
+
+
+@section Scripts {
+    @* @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} *@
+    <partial name="_ValidationScriptsPartial.cshtml" />
+}

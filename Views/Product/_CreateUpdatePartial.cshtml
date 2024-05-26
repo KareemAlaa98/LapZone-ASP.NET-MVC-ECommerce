@@ -1,0 +1,117 @@
+﻿@model E_Commerce_GP.ViewModels.ProductViewModel
+
+@{
+    SelectList listOfBrands = new SelectList(ViewBag.listOfBrands, "Id", "Name");
+    SelectList listOfDiscounts = new SelectList(ViewBag.listOfDiscounts, "Id", "DiscountPercent");
+    IEnumerable<ProductImage> listOfImages = ViewData["listOfImages"] as IEnumerable<ProductImage>;
+    bool isNewProduct = Model.Id == 0; // Check if the product is new
+}
+
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="text-white py-3 font-weight-bold display-4">@ViewData["Title"]</h3>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form method="post" asp-controller="Product" asp-action="@ViewData["action"]" enctype="multipart/form-data" class="row">
+            <input asp-for="Id" type="hidden" />
+
+            <div class="row">
+                <div class="col-10">
+                    <div class="border p-3">
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="Name" class="form-control border-0 shadow" />
+                            <label asp-for="Name" class="ms-2"></label>
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group py-2 col-12">
+                            <label asp-for="Description" class="ms-2 text-muted"></label>
+                            <textarea id="descriptionEditor" asp-for="Description" class="form-control border-0 shadow" style="height: 150px;"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="Price" class="form-control border-0 shadow" />
+                            <label asp-for="Price" class="ms-2"></label>
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="QuantityInStock" class="form-control border-0 shadow" />
+                            <label asp-for="QuantityInStock" class="ms-2"></label>
+                            <span asp-validation-for="QuantityInStock" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <select asp-for="BrandId" asp-items="listOfBrands" class="form-select border-0 shadow">
+                                <option disabled selected>--Select Brand--</option>
+                            </select>
+                            <label asp-for="BrandId" class="ms-2"></label>
+                            <span asp-validation-for="BrandId" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <select asp-for="DiscountId" asp-items="listOfDiscounts" class="form-select border-0 shadow">
+                                <option value="">None</option>
+                            </select>
+                            <label asp-for="DiscountId" class="ms-2"></label>
+                            <span asp-validation-for="DiscountId" class="text-danger"></span>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="form-group">
+                            <label class="control-label">New Images</label>
+                            <input asp-for="ProductImages" type="file" class="form-control border-0 shadow" multiple />
+                            @if (!isNewProduct)
+                            {
+                                <small id="fileUploadInfo" class="form-text text-muted">Choose new file to upload or leave empty if you don't want to change the images.</small>
+                                <span asp-validation-for="ProductImages" class="text-danger"></span>
+                            }
+                            else
+                            {
+                                <span id="productImagesValidation" class="text-danger"></span>
+                            }
+                        </div>
+                        <div class="col-12 pt-2">
+                            <input type="submit" value="Submit" class="btn btn-primary" />
+                            <a asp-action="Index" class="btn btn-outline-primary border">Back to Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Existing Images -->
+                <div class="col-2">
+                    @if (!isNewProduct && listOfImages != null && listOfImages.Any())
+                    {
+                        <div class="form-group">
+                            <label class="control-label">Existing Images</label>
+                            @foreach (var image in listOfImages)
+                            {
+                                <div class="border p-1 m-2 text-center">
+                                    <img src="@Url.Content("~/images/products/product-" + ViewData["ProductId"] + "/" + image.ImageUrl)" width="100%"
+                                         style="border-radius:5px; border:1px solid #bbb9b9" />
+                                    <div style="position: relative;">
+                                        <a asp-action="DeleteImage" class="btn btn-danger" asp-route-imageId="@image.Id">
+                                            <i class="bi bi-trash-fill"></i> Delete
+                                        </a>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.tiny.cloud/1/g28lhnxtlihu4l4a381gw7tz47voznshwbi10lmsvlekrfme/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#descriptionEditor',
+            plugins: 'anchor autolink charmap codesample emoticons lists table visualblocks wordcount',
+            toolbar: 'undo redo | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | code',
+        });
+    </script>
+    <partial name="_ValidationScriptsPartial" />
+}

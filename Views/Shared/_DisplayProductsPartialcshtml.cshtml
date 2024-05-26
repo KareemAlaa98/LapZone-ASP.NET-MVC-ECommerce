@@ -1,0 +1,140 @@
+﻿@model List<Product>
+
+@{
+    decimal newPrice = 0;
+}
+
+
+<section >
+    @if (User.IsInRole("Admin"))
+    {
+        <div>
+            <a href="/product/create" class="btn btn-outline-success btn-sm m-2 mt-4">
+                <i class="bi bi-plus-circle-fill"></i>
+                Create New
+            </a>
+        </div>
+    }
+    <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var product in Model)
+            {
+                <div class="col">
+                        <div class="row mb-3">
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-end">
+                                    <a href="/Product/Update/@product.Id" class=" btn btn-sm btn-outline-warning me-2"><i class="bi bi-pencil-square"></i></a>
+                                    <a href="/Product/Delete/@product.Id" class=" btn btn-sm btn-outline-danger me-2"><i class="bi bi-trash"></i> </a>
+                                </div>
+                         </div>
+                            }
+                    </div>
+                    
+                    <div class="card border-danger position-relative">
+                        @if (product.Discount != null && product.Discount.DiscountPercent > 0)
+                        {
+                            <div class="discount-label position-absolute top-25 start-25">
+                                <span class="badge rounded-pill bg-danger">@product.Discount.DiscountPercent% OFF</span>
+                            </div>
+                        }
+
+                        @if (product.AverageRating != null)
+                        {
+                            <div class="rating-label position-absolute top-25 end-25">
+                                <span class="badge rounded-pill bg-dark text-light">@product.AverageRating <i class="fa fa-star text-warning"></i></span>
+                            </div>
+                        }
+
+
+                        @{
+                            var imageUrl = product.ProductImages.Any()
+                            ? Url.Content("/images/products/product-" + product.Id + "/" + product.ProductImages[0].ImageUrl)
+                            : Url.Content("/images/backup_img.jpg");
+                        }
+                        <img src="@imageUrl" class="card-img-top product-image" alt="Product Image" />
+
+
+
+                        <div class="card-body">
+                            <span>@product.QuantityInStock</span>
+                            @if (product.Brands != null)
+                            {
+                                <h6 class="card-subtitle mb-2 text-muted">@product.Brands.Name</h6>
+                            }
+                            <h6 class="card-title">@product.Name</h6>
+                            @if (product.DiscountId != null)
+                            {
+                                newPrice = product.Price - (product.Price * product.Discount.DiscountPercent / 100);
+                                <div>
+                                    <p class="text-dark">@newPrice<small>EGP</small> <span class="small text-danger"><s>@product.Price<small>EGP</small></s></span></p>
+                                </div>
+                            }
+                            else
+                            {
+                                newPrice = product.Price;
+                                <p class="text-dark">@newPrice<small>EGP</small></p>
+                            }
+                            <div class="mt-2 d-flex justify-content-between align-items-center">
+                                <a href="/product/Details?id=@product.Id" class="btn btn-outline-info btn-sm">
+                                    <i class="bi bi-eye-fill me-1"></i>
+                                    <small>Details</small>
+                                </a>
+                                
+                                <a href="/Wishlist/AddProductToWishlist/@product.Id" class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-heart"></i>
+                                </a>
+                              
+                                @if (product.QuantityInStock < 1)
+                                {
+                                    <button class="btn btn-primary btn-sm" disabled>
+                                        <small>Out Of Stock</small>
+                                    </button>
+                                }
+                                else
+                                {
+                                    <a href="/cart/addTocart/@product.Id" class="btn btn-outline-success btn-sm">
+                                         <small>Add To Cart</small><i class="bi bi-cart-plus me-1"></i>
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    .position-relative {
+        position: relative;
+    }
+
+    .discount-label {
+        top: 10px;
+        left: 10px;
+    }
+
+    .rating-label {
+        top: 10px;
+        right: 10px;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 250px; /* Fixed height */
+        object-fit: cover; /* Ensures the image covers the area without distorting */
+    }
+
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 0.85rem;
+    }
+
+    .rounded-circle {
+        border-radius: 50%;
+    }
+</style>

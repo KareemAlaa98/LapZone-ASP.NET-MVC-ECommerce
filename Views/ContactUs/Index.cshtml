@@ -1,0 +1,50 @@
+﻿@model List<ContactUs>
+
+@{
+    ViewData["Title"] = "Contact Messages";
+}
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-primary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Contact Messages List</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Subject
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var message in Model)
+                {
+                    <tr>
+                        <td>@message.Name</td>
+                        <td>@message.Email</td>
+                        <td>@message.Subject</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a asp-controller="ContactUs" asp-action="Details" asp-route-id="@message.Id" class="btn btn-info">
+                                    <i class="bi bi-info-circle"></i> Details
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

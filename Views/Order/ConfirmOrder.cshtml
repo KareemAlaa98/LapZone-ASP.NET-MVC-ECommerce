@@ -1,0 +1,45 @@
+﻿@model Order
+
+@{
+    ViewData["Title"] = "Order Confirmation";
+}
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            @*  <h2 class="mb-4 text-center">Checkout</h2> *@
+            <div class="card card-background shadow-sm">
+                <div class="card-body">
+                    <h4 class="mb-3 text-center text-success">Your Order has been Created Successfully</h4>
+                   
+                    <div class="mb-2">
+                        <strong>Order Code:</strong> @Model.OrderCode
+                    </div>
+                    <div class="mb-2">
+                        <strong>Total:</strong> @Model.Total<small>EGP</small>
+                    </div>
+                    <div class="mb-2">
+                        <strong>Order Time:</strong> @Model.CreatedAt
+                    </div>
+                    <div class="mb-2">
+                        <strong>Order Status:</strong> @Model.Status
+                    </div>
+                    
+                    <div class="mb-2">
+                        <a class="btn btn-primary border border-dark rounded" asp-controller="Product" asp-action="Index">Continue Shopping </a>
+                        <a class="btn btn-secondary border border-dark rounded" asp-controller="Order" asp-action="Index">View All Orders</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>

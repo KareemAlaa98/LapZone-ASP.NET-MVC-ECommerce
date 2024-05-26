@@ -1,0 +1,146 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Details";
+    decimal newPrice = 0;
+    var listOfImages = Model.ProductImages.ToList(); ;
+    IEnumerable<E_Commerce_GP.Models.Review> listOfReviews = ViewData["listOfReviews"] as IEnumerable<E_Commerce_GP.Models.Review>;
+    var reviews = Model.Reviews.ToList();
+}
+
+
+    <div class="card shadow border-0 mt-4 mb-4">
+        <div class="card-header bg-secondary bg-gradient text-light py-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="text-white text-uppercase">@Model.Name</h3>
+                    <p class="text-white-50 fw-semibold mb-0">by @Model.Brands.Name</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="py-3">
+                <div class="row">
+                    <div class="col-lg-6">
+                        @if (listOfImages != null && listOfImages.Any())
+                        {
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    @foreach (var image in listOfImages)
+                                    {
+                                        <div class="carousel-item @(image == listOfImages.First() ? "active" : "")">
+                                            <img src="@Url.Content("~/images/products/product-" + Model.Id + "/" + image.ImageUrl)" class="d-block w-100" alt="Product Image" >
+                                        </div>
+                                    }
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        }
+                    </div>
+                    <div class="col-lg-6">
+                        @if (Model != null)
+                        {
+                            <div class="row ps-2">
+                                <p class="text-dark text-opacity-100" style="font-size: 20px;"><i class="fa fa-star text-warning"></i>@Model.AverageRating</p>
+                            </div>
+                            <div class="row ps-2">
+                                <p class="text-dark text-opacity-100" style="font-size: 20px;"><b><span style="font-weight: 700;">Name:</span></b> @Model.Name</p>
+                            </div>
+                            <div class="row ps-2">
+                                <p class="text-dark text-opacity-100" style="font-size: 20px;"><b><span style="font-weight: 700;">Brand:</span></b> @Model.Brands.Name</p>
+                            </div>
+                            <div class="row ps-2">
+                                <p class="text-dark text-opacity-100" style="font-size: 20px;"><b><span style="font-weight: 700;">Description:</span></b> @Html.Raw(Model.Description)</p>
+                            </div>
+                            <div class="row ps-2">
+                                <p class="text-dark text-opacity-100" style="font-size: 20px;"><b><span style="font-weight: 700;">Quantity in Stock:</span></b> @Html.Raw(Model.QuantityInStock)</p>
+                            </div>
+                            <div class="row ps-2">
+                                <p class="text-dark text-opacity-100" style="font-size: 20px;"><b><span style="font-weight: 700;">Price:</span></b> @Model.Price <small>EGP</small></p>
+                            </div>
+                            @if (Model.Discount != null)
+                            {
+                                newPrice = Model.Price - (Model.Price * Model.Discount.DiscountPercent / 100);
+                                <div class="row ps-2">
+                                    <p class="text-dark text-opacity-100" style="font-size: 20px;"><b><span style="font-weight: 700;">Price After Discount:</span></b> <span style="color: red; font-weight: bold;">@newPrice<small>EGP</small></span></p>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                <div class="row justify-content-end mt-4">
+                    @if (Model.QuantityInStock < 1)
+                    {
+                        <button class="btn btn-primary btn-sm  col-2" disabled>
+                            Out Of Stock
+                        </button>
+                    }
+                    else
+                    {
+                    <a href="/cart/addTocart/@Model.Id" class="btn btn-outline-success btn-sm col-2">
+                        Add To Cart<i class="bi bi-cart-plus me-1"></i>
+                    </a>
+                    }
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-2">
+        <a asp-action="Index" class="btn btn-outline-primary bg-gradient fw-semibold btn-sm">
+            Back to Products
+        </a>
+    </div>
+    <div class="col-2">
+        <a asp-action="AddComment" asp-route-productId="@Model.Id" class="btn btn-primary btn-sm">Leave a Review</a>
+    </div>
+</div>
+
+@if (reviews != null)
+{
+    <h2 class="m-2">Product Reviews</h2>
+    <ul class="review-list">
+        @foreach (var review in reviews)
+        {
+            <li class="review-item">
+                <p class="review-rating"><strong>Rating: @review.Rating<i class="fa fa-star text-warning"></i></strong></p>
+                <p class="review-comment">@review.Comment</p>
+                <p class="review-author"><em>By @review.ApplicationUser.FirstName @review.ApplicationUser.LastName</em></p>
+                <p class="review-date"><small>Posted on @review.CreatedAt</small></p>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No reviews yet.</p>
+
+@* @if (listOfReviews != null && listOfReviews.Any())
+{
+    <h2>Product Reviews</h2>
+    <ul class="review-list">
+        @foreach (var review in listOfReviews)
+        {
+            <li class="review-item">
+                <p class="review-rating"><strong>Rating: @review.Rating</strong></p>
+                <p class="review-comment">@review.Comment</p>
+                <p class="review-author"><em>By @review.ApplicationUser.FirstName @review.ApplicationUser.LastName</em></p>
+                <p class="review-date"><small>Posted on @review.CreatedAt</small></p>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No reviews yet.</p>
+} *@
+
+}

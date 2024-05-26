@@ -1,0 +1,75 @@
+﻿@model Wishlist
+@{
+    decimal newPrice = 0;
+    ViewData["Title"] = "Wishlist";
+}
+<div class="card-header bg-secondary bg-gradient ml-0 py-3 text-light" style="text-align: center;">
+    <div>
+        <h1 style="font-size:40px;margin-right:10px;display: inline;color:white;"> Wishlist</h1>
+        <span style="display: inline;font-size:40px"><i class="bi bi-heart"></i></span>
+    </div>
+</div>
+@if (Model.Products.Any())
+{
+    <table class="table table-hover">
+        <thead>
+            <tr style="font-weight:bold">
+                <th scope="col">Product Name</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Products)
+            {
+                <tr>
+                    <td>
+                        <div style="display:flex; align-items: center;">
+                            <form id="remove-product-form-@item.Id" asp-action="RemoveProduct" asp-controller="Wishlist" method="post" style="margin-right: 10px;">
+                                <input type="hidden" name="productId" value="@item.Id" />
+                                <button type="submit" class="btn btn-link" title="Delete">
+                                    <i style="font-size:20px" class="bi bi-trash-fill text-danger"></i>
+                                </button>
+                            </form>
+                            <img style="width:80px;height:60px; margin-right: 10px;" src="@Url.Content("/images/products/product-" + item.Id + "/" + item.ProductImages[0].ImageUrl)" alt="Laptop"  />
+                            <p>@item.Name</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card-text">
+                            @if (item.DiscountId != null)
+                            {
+                                newPrice = item.Price - (item.Price * item.Discount.DiscountPercent / 100);
+                                <small class="small text-muted"><s>@item.Price<small>EGP</small></s></small>
+                                <p class="small text-dark">@newPrice<small>EGP</small></p>
+                            }
+                            else
+                            {
+                                newPrice = item.Price;
+                                <p class="small text-dark">@newPrice<small>EGP</small></p>
+                            }
+                        </div>
+                    </td>
+                    <td>
+                        @if (item.QuantityInStock < 1)
+                        {
+                            <button class="btn btn-primary btn-sm" disabled>
+                                <small>Out Of Stock</small>
+                            </button>
+                        }
+                        else
+                        {
+                            <a href="/cart/addTocart/@item.Id" class="btn btn-outline-success btn-sm">
+                                <small>Add To Cart</small><i class="bi bi-cart-plus me-1"></i>
+                            </a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Your wishlist is empty.</p>
+}

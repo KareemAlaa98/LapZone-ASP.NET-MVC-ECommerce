@@ -1,0 +1,85 @@
+﻿@model List<Brand>
+
+@{
+    ViewData["Title"] = "Brand";
+}
+
+<style>
+    .custom-table {
+        background-color: white !important; 
+        font-size: 1.25rem; 
+    }
+
+        .custom-table th, .custom-table td {
+            color: black !important; 
+        }
+
+    .btn-xs {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.50rem;
+        line-height: 1.1;
+    }
+</style>
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-primary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-light py-2">Brands List</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-6">
+            </div>
+            @if (User.IsInRole("Admin"))
+            {
+                <div>
+                    <a asp-controller="Brand" asp-action="Create" class="btn btn-success">
+                        <i class="bi bi-plus-circle"></i> Create New Brand
+                    </a>
+                </div>
+            }
+        </div>
+        <table class="table table-bordered table-striped custom-table text-center">
+            <thead>
+                <tr style="font-size:20px">
+                    <th> Brand Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+
+                    <tr>
+                        <td scope="row">@obj.Name</td>
+                        
+                        <td>
+                            <div style="gap:4px" class="w-50 btn-group" role="group">
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@obj.Id">
+                                        <i class="bi bi-pencil-square"></i>
+                                        Edit
+                                    </a>
+                                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@obj.Id">
+                                        <i class="bi bi-trash"></i>
+                                        Delete
+                                    </a>
+                                }
+                                <a href="/brand/details/@obj.Id"  class="btn btn-info btn-sm ">
+                                    <i class="bi bi-eye-fill"></i>
+                                    Products
+                                </a>
+                           </div>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>

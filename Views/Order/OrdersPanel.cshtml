@@ -1,0 +1,46 @@
+﻿@model List<Order>
+
+@{
+    ViewData["Title"] = "Orders Panel";
+}
+
+<div class="card-header bg-primary bg-gradient ml-0 py-3">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="text-light py-2">Orders List</h2>
+        </div>
+    </div>
+</div>
+<table class="table table-bordered table-striped custom-table">
+    <thead class="bg-primary">
+        <tr class="bg-primary">
+            <th scope="col">Order Code</th>
+            <th scope="col">Total</th>
+            <th scope="col">Status</th>
+            <th scope="col">UserName</th>
+           <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderCode</td>
+                <td>@order.Total <small>EGP</small> </td>
+                <td>@order.Status</td>
+                <td>@order.ApplicationUser.UserName</td>
+                <td>
+                    @if (order.Status == OrderStatus.Processing)
+                    {
+                        <a class="btn btn-danger border btn-sm border-dark rounded" href="/order/cancelorder/@order.Id">Cancel Order</a>
+                    }
+                    else
+                    {
+                        <button class="btn btn-primary btn-sm border border-dark rounded" disabled>Cancel Order</button>
+                    }
+                    <a class="btn btn-sm btn-info" href="/order/details/@order.Id">Details</a>
+                 </td>
+            </tr>
+        }
+    </tbody>
+</table>

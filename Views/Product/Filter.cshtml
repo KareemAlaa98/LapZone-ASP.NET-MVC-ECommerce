@@ -1,0 +1,36 @@
+﻿@model List<Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+@if (Model.Count > 0)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <partial name="_FilterFormPartial"></partial>
+            </div>
+            <div class="col-10">
+                <partial name="_DisplayProductsPartialcshtml"></partial>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <partial name="_FilterFormPartial"></partial>
+            </div>
+            <div class="col-10">
+                <div class="alert alert-danger mt-5" role="alert">
+                    <h4 class="alert-heading">No Matching Products!</h4>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+}

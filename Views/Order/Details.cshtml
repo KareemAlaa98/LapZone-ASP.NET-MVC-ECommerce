@@ -1,0 +1,92 @@
+﻿@model Order
+
+@{
+    ViewData["Title"] = "Orders";
+    decimal newPrice = 0;
+}
+
+<div class="container-fluid">
+    <div class="row" style="height: 100vh;">
+        <!-- Order Details Section (Left Half) -->
+        <div class="col-md-7" style="border-right: 1px solid #ddd; height: 100%; overflow-y: auto;">
+            <h2>Order Code: @Model.OrderCode </h2>
+            <h2>Order Date & Time: @Model.CreatedAt </h2>
+            <h2>Total: @Model.Total<small>EGP</small></h2>
+            <h2>Status: @Model.Status</h2>
+          
+            <h4>Order Items: </h4>
+            <div>
+                @foreach (var item in Model.OrderItems)
+                {
+                    <h5>@item.Product.Name</h5>
+                    <h5>Quantity: @item.Quantity</h5>
+
+                    @if (item.Product.DiscountId != null)
+                    {
+                        newPrice = @item.Product.Price - (@item.Product.Price * @item.Product.Discount.DiscountPercent / 100);
+                        <h5>
+                            Unit Price: @newPrice <small>EGP</small> <span><small><s class="text-danger">@item.Product.Price</s></small></span>
+                        </h5>
+                        <h5>
+                            Price: @(item.Quantity * newPrice) <small>EGP</small> <span><small>@($" ({item.Quantity} X {newPrice})")</small></span>
+                        </h5>
+                    }
+                    else
+                    {
+                        newPrice = item.Product.Price;
+                        <h5>
+                            Unit Price: @newPrice <small>EGP</small>
+                        </h5>
+                        <h5>
+                            Price: @(item.Quantity * newPrice) <small>EGP</small> <span><small>@($" ({item.Quantity} x {newPrice})")</small></span>
+                        </h5>
+                    }
+                    <hr />
+                }
+            </div>
+            <hr />
+            <hr />
+        </div>
+
+        <!-- Shipping Data Section (Right Half) -->
+        <div class="col-md-5" style="height: 100%; overflow-y: auto;">
+            <h2>Shipping Data</h2>
+            <p><strong>Full Name: </strong>@Model.ApplicationUser.FirstName @Model.ApplicationUser.LastName </p>
+            <p><strong>Phone Number: </strong>@Model.ApplicationUser.PhoneNumber</p>
+            <p><strong>Street Address: </strong> @Model.ApplicationUser.Street</p>
+            <p><strong>City:</strong> @Model.ApplicationUser.City</p>
+            <p><strong>Building Number: </strong> @Model.ApplicationUser.Building_Number</p>
+            <p><strong>Floor Number: </strong> @Model.ApplicationUser.Floor_Number</p>
+            @if (Model.Status == OrderStatus.Processing)
+            {
+                <a class="btn btn-sm btn-danger" href="/order/cancelorder/@Model.Id">Cancel Order</a>
+            }
+            else
+            {
+                <button class="btn btn-sm btn-primary" disabled>Cancel Order</button>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    .row {
+        height: 100vh;
+    }
+
+    .col-md-6 {
+        padding: 20px;
+    }
+
+    .border-right {
+        border-right: 1px solid #ddd;
+    }
+
+    .overflow-y-auto {
+        overflow-y: auto;
+    }
+</style>

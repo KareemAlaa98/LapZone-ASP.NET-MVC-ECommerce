@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Products";
+}
+
+<form action="/product/Filter" method="post" class="bg-light">
+    <fieldset>
+        <legend class="bg-primary text-white p-2">Filters</legend>
+
+        <!-- Brand filter -->
+        <label class="bg-primary mx-2 fw-bold text-white p-2" for="brandName">Brand:</label>
+        <br>
+        <br>
+        <input type="radio" id="brand1" name="brandName" value="Dell" class="form-check-input mx-2">
+        <label for="brand1">Dell</label>
+        <br>
+
+        <input type="radio" id="brand2" name="brandName" value="Hp" class="form-check-input mx-2">
+        <label for="brand2">Hp</label>
+        <br>
+
+        <input type="radio" id="brand3" name="brandName" value="Apple" class="form-check-input mx-2">
+        <label for="brand3">Apple</label>
+        <br>
+
+        <input type="radio" id="brand4" name="brandName" value="Lenovo" class="form-check-input mx-2">
+        <label for="brand4">Lenovo</label>
+        <br>
+
+        <input type="radio" id="brand5" name="brandName" value="Asus" class="form-check-input mx-2">
+        <label for="brand5">Asus</label>
+        <br>
+
+        <input type="radio" id="brand6" name="brandName" value="Acer" class="form-check-input mx-2">
+        <label for="brand6">Acer</label>
+        <br>
+
+        <input type="radio" id="brand7" name="brandName" value="Microsoft" class="form-check-input mx-2">
+        <label for="brand7">Microsoft</label>
+        <br>
+
+        <input type="radio" id="brand8" name="brandName" value="Samsung" class="form-check-input mx-2">
+        <label for="brand8">Samsung</label>
+        <br>
+
+        <input type="radio" id="brand9" name="brandName" value="Razer" class="form-check-input mx-2">
+        <label for="brand9">Razer</label>
+        <br>
+
+        <input type="radio" id="brand10" name="brandName" value="MSI" class="form-check-input mx-2">
+        <label for="brand10">MSI</label>
+        <br>
+        <br>
+        <!-- Price filter -->
+        <label class="bg-primary fw-bold text-white p-2 mx-2" for="brandName">Price:</label>
+        <br>
+        <br>
+        <label for="minPrice" class="mx-2">Min Price:</label>
+        <input type="number" id="minPrice" name="minPrice" class="form-control">
+        <label for="maxPrice" class="mx-2">Max Price:</label>
+        <input type="number" id="maxPrice" name="maxPrice" class="form-control">
+        <span id="priceError" class="text-danger"></span>
+        <br>
+        <!-- Rating filter -->
+        <label class="bg-primary fw-bold text-white p-2 mx-2" for="rating">Rating:</label>
+        <br>
+        <br>
+        <input type="radio" id="star1" name="rating" value="1" class="form-check-input mx-2">
+        <label class="text-warning" for="star1"> <i class="fa fa-star"></i> </label>
+        <br>
+
+        <input type="radio" id="star2" name="rating" value="2" class="form-check-input mx-2">
+        <label class="text-warning" for="star2"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </label>
+        <br>
+
+        <input type="radio" id="star3" name="rating" value="3" class="form-check-input mx-2">
+        <label class="text-warning" for="star3"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </label>
+        <br>
+
+        <input type="radio" id="star4" name="rating" value="4" class="form-check-input mx-2">
+        <label class="text-warning" for="star4"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </label>
+        <br>
+
+        <input type="radio" id="rating5" name="rating" value="5" class="form-check-input mx-2">
+        <label class="text-warning" for="rating5"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </label>
+        <br>
+        <!-- Your other radio inputs for rating filter -->
+
+        <button id="filterbtn" class="btn btn-sm btn-outline-primary p-2 mt-4" type="submit">Apply Filters</button>
+    </fieldset>
+</form>
+
+<style>
+    legend {
+        border: 1px solid #007bff;
+        border-radius: 0.25rem;
+        
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get references to the min and max price input fields, error span, and submit button
+        var minPriceInput = document.getElementById("minPrice");
+        var maxPriceInput = document.getElementById("maxPrice");
+        var errorSpan = document.getElementById("priceError");
+        var form = document.querySelector("form");
+        var submitButton = document.getElementById("filterbtn");
+
+        // Add input event listeners to both min and max price fields
+        minPriceInput.addEventListener("input", validatePriceRange);
+        maxPriceInput.addEventListener("input", validatePriceRange);
+
+        // Function to validate the price range
+        function validatePriceRange() {
+            // Get the values of min and max price
+            var minPrice = parseFloat(minPriceInput.value);
+            var maxPrice = parseFloat(maxPriceInput.value);
+
+            // Check if min price is greater than or equal to max price
+            if (minPrice >= maxPrice) {
+                // Display the error message
+                errorSpan.textContent = "Minimum price must be less than maximum price.";
+                // Disable the submit button
+                submitButton.disabled = true;
+            } else {
+                // Clear the error message if validation passes
+                errorSpan.textContent = "";
+                // Enable the submit button
+                submitButton.disabled = false;
+            }
+        }
+    });
+</script>

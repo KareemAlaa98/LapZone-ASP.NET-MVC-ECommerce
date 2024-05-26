@@ -1,0 +1,131 @@
+﻿@model ShoppingCart
+
+@{
+    ViewData["Title"] = "Cart";
+    decimal newPrice = 0;
+}
+
+@if (Model.CartItems.Count <= 0)
+{
+    <h3>Your Cart is Empty</h3>
+}
+
+else
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.CartItems)
+                        {
+                            <tr>
+                                <td class="col-sm-8 col-md-6">
+                                    <div class="media">
+                                        <div style="display:flex;gap:6px">
+                                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="@Url.Content("/images/products/product-" + item.Product.Id + "/" + item.Product.ProductImages[0].ImageUrl)" style="width: 100px; height: 80px;"> </a>
+                                            <p>@item.Product.Name</p>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-2">
+                                    <div style="display:flex;gap:6px">
+                                        <h3> @item.Quantity</h3>
+                                        <div>
+                                            @if (item.Quantity == 1)
+                                            {
+                                                <a class="btn btn-sm btn-dark" disabled>-</a>
+                                            }
+                                            else
+                                            {
+                                                <a class="btn btn-sm btn-danger" href="/cart/DecreaseQuantity/@item.Id">-</a>
+                                            }
+
+                                            @if (item.Quantity == 10 || item.Quantity >= item.Product.QuantityInStock)
+                                            {
+                                                if (item.Quantity >= item.Product.QuantityInStock)
+                                                {
+                                                    <a class="btn btn-sm btn-dark" disabled>+</a> 
+                                                    <div class="text-danger"> <small>stock isn't enough</small></div>
+                                                }
+                                                else
+                                                {
+                                                    <a class="btn btn-sm btn-dark" disabled>+</a>
+                                                    <div class="text-danger"> <small>maximum allowed quantity</small></div>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <a class="btn btn-sm btn-success" href="/cart/increaseQuantity/@item.Id">+</a>
+                                            }
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="col-sm-2">
+                                    <div>
+                                        @if (item.Product.DiscountId != null)
+                                        {
+                                            newPrice = @item.Product.Price - (@item.Product.Price * @item.Product.Discount.DiscountPercent / 100);
+                                            <p>
+                                                @newPrice <small>EGP</small> <span><small><s class="text-danger">(@item.Product.Price) EGP</s></small></span>
+                                            </p>
+                                        }
+                                        else
+                                        {
+                                            newPrice = item.Product.Price;
+                                            <p>
+                                                Price: @newPrice <small>EGP</small>
+                                            </p>
+                                        }
+                                    </div>
+                                </td>
+                                <td class="col-sm-2">
+                                    <div>
+                                        <span>@(item.Quantity * newPrice) <small>EGP</small></span>
+                                    </div>
+                                </td>
+                                <td class="col-sm-1 col-md-1">
+                                    <a href="/cart/removefromcart/@item.Id" class="btn btn-outline-danger">
+                                        <span class="glyphicon glyphicon-remove"></span> Remove
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                        <tr>
+                            <td><button class="btn btn-danger">SubTotal</button></td>
+                            <td class="text-right"><h4><strong>@Model.Total</strong><small>EGP</small></h4></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="/Product/Index" class="btn btn-outline-primary">
+                                    <i class="bi bi-cart-plus"></i>
+                                    Continue Shopping
+                                </a>
+                            </td>
+
+                            <td>
+                                <a href="/Cart/Checkout" class="btn btn-success">
+                                    Checkout <span class="glyphicon glyphicon-play"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+}

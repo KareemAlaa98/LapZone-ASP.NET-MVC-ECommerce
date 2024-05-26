@@ -1,0 +1,1837 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\E-Commerce_GP.bundle.scp.css",
+      "PackagePath": "staticwebassets\\E-Commerce_GP.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\icons\\5571495.jpg",
+      "PackagePath": "staticwebassets\\icons\\5571495.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\backup_img.jpg",
+      "PackagePath": "staticwebassets\\images\\backup_img.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\icons\\5571495.jpg",
+      "PackagePath": "staticwebassets\\images\\icons\\5571495.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-10\\35f46078-ef69-4409-83d2-2cf2618f581e_Razer01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-10\\35f46078-ef69-4409-83d2-2cf2618f581e_Razer01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-10\\77a34795-08d7-4348-8e7c-3cd480bd56c8_Razer03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-10\\77a34795-08d7-4348-8e7c-3cd480bd56c8_Razer03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-10\\7be147a5-2aa8-4f6f-ba69-9df57ab26fc9_Razer02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-10\\7be147a5-2aa8-4f6f-ba69-9df57ab26fc9_Razer02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-10\\b9b38b31-6942-4105-a918-afeed1f7352d_Razer02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-10\\b9b38b31-6942-4105-a918-afeed1f7352d_Razer02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-10\\bf8d522e-6512-4f93-9a9c-3d855ecd4529_Razer03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-10\\bf8d522e-6512-4f93-9a9c-3d855ecd4529_Razer03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-10\\dd2160f8-7da5-49fe-912a-b797d5193ace_Razer01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-10\\dd2160f8-7da5-49fe-912a-b797d5193ace_Razer01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-11\\262045f3-8ecf-47ee-bbeb-531dbfa42eee_Acer02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-11\\262045f3-8ecf-47ee-bbeb-531dbfa42eee_Acer02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-11\\39046402-a2c2-4066-b3ab-0e45ed09f39b_Acer01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-11\\39046402-a2c2-4066-b3ab-0e45ed09f39b_Acer01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-11\\9ca56580-2684-4c8c-91fe-3d83a36cab04_Acer03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-11\\9ca56580-2684-4c8c-91fe-3d83a36cab04_Acer03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-12\\1fbb02e2-d97e-4d5e-94aa-6d1aa1519ed1_Acer01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-12\\1fbb02e2-d97e-4d5e-94aa-6d1aa1519ed1_Acer01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-12\\235781eb-fe95-40f8-b850-eab8f532b782_Acer02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-12\\235781eb-fe95-40f8-b850-eab8f532b782_Acer02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-12\\e8cbcde3-b0eb-4bb2-96e6-ce70807191a9_Acer03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-12\\e8cbcde3-b0eb-4bb2-96e6-ce70807191a9_Acer03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-13\\1cff4a8c-9dad-4ece-ac15-3d0b97cc17ea_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-13\\1cff4a8c-9dad-4ece-ac15-3d0b97cc17ea_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-13\\2218e3c4-2717-43ae-af92-cb28eed51389_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-13\\2218e3c4-2717-43ae-af92-cb28eed51389_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-13\\38cc213c-f85b-4b03-b2a9-57fef7f7ab98_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-13\\38cc213c-f85b-4b03-b2a9-57fef7f7ab98_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-13\\3cbb10ed-fc7b-4e61-97af-f4a30ceb7e0e_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-13\\3cbb10ed-fc7b-4e61-97af-f4a30ceb7e0e_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-13\\8723227d-fbc3-474f-a301-b9eed9a1f301_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-13\\8723227d-fbc3-474f-a301-b9eed9a1f301_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-13\\89668464-493f-474d-8995-eeafe6687c5c_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-13\\89668464-493f-474d-8995-eeafe6687c5c_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-14\\08dbe10e-79dd-4baa-985f-3a3e3b819c9d_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-14\\08dbe10e-79dd-4baa-985f-3a3e3b819c9d_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-14\\2e77b88a-7846-44f5-9d7c-cd19a641abd0_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-14\\2e77b88a-7846-44f5-9d7c-cd19a641abd0_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-14\\47823763-8fe3-48e0-85a5-53269eeba61d_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-14\\47823763-8fe3-48e0-85a5-53269eeba61d_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-14\\6ead741b-93e1-4b24-9cbd-bb2f5c7df236_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-14\\6ead741b-93e1-4b24-9cbd-bb2f5c7df236_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-14\\73cbe17e-b34e-4e72-b6c5-7e036d171945_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-14\\73cbe17e-b34e-4e72-b6c5-7e036d171945_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-14\\a9fa6ff3-6bfc-4a47-bfab-ba59612afa9e_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-14\\a9fa6ff3-6bfc-4a47-bfab-ba59612afa9e_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-14\\e9e7a8be-7100-42fe-ba3e-4927cd34412a_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-14\\e9e7a8be-7100-42fe-ba3e-4927cd34412a_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-14\\fc2572a4-b780-49ae-aca2-2f7ea60e5799_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-14\\fc2572a4-b780-49ae-aca2-2f7ea60e5799_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-15\\101262b5-c54e-41d4-9c14-eadabb7253a1_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-15\\101262b5-c54e-41d4-9c14-eadabb7253a1_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-15\\91fd4581-05a0-4971-bc1b-119938d99f27_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-15\\91fd4581-05a0-4971-bc1b-119938d99f27_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-15\\9f02aee4-72ec-464d-a1a9-bce0c5e70355_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-15\\9f02aee4-72ec-464d-a1a9-bce0c5e70355_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-15\\aecf1a03-f5d5-468d-a245-f9a038d207ce_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-15\\aecf1a03-f5d5-468d-a245-f9a038d207ce_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-15\\dbcdee3b-6911-44d9-aeff-2ef02686c375_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-15\\dbcdee3b-6911-44d9-aeff-2ef02686c375_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-15\\dc68d517-7a19-4214-96af-e30105be3217_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-15\\dc68d517-7a19-4214-96af-e30105be3217_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-16\\12fc567f-6f38-4141-a6f2-324e97ec3bea_Asus03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-16\\12fc567f-6f38-4141-a6f2-324e97ec3bea_Asus03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-16\\4926dce1-ee2a-4755-9ae7-2cb2c0ee425c_Asus01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-16\\4926dce1-ee2a-4755-9ae7-2cb2c0ee425c_Asus01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-16\\a9082ff4-f604-4451-af0b-4dc4b73d74ac_Asus01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-16\\a9082ff4-f604-4451-af0b-4dc4b73d74ac_Asus01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-16\\b9a0ae67-dd5c-44f3-8553-9f42d17069a4_Asus02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-16\\b9a0ae67-dd5c-44f3-8553-9f42d17069a4_Asus02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-16\\e51ab04a-302d-4d13-8968-86b32fc2e53f_Asus02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-16\\e51ab04a-302d-4d13-8968-86b32fc2e53f_Asus02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-16\\f71fa9c2-ab92-4135-b2b3-c7743767242f_Asus03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-16\\f71fa9c2-ab92-4135-b2b3-c7743767242f_Asus03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-17\\28ca9465-8cf5-4dc7-8c43-137ba3cdd0ea_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-17\\28ca9465-8cf5-4dc7-8c43-137ba3cdd0ea_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-17\\36c7d14a-9b54-4462-911c-9ccc1fe1c40a_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-17\\36c7d14a-9b54-4462-911c-9ccc1fe1c40a_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-17\\9be3fc6e-4c6d-4dd7-a7ce-59bb607ffe63_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-17\\9be3fc6e-4c6d-4dd7-a7ce-59bb607ffe63_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-17\\a6333aee-db46-436c-905d-06acb7338953_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-17\\a6333aee-db46-436c-905d-06acb7338953_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-17\\d4aa1d47-2e1b-4e03-8060-4d53a305d681_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-17\\d4aa1d47-2e1b-4e03-8060-4d53a305d681_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-17\\e7b510df-30d3-45b7-a65c-33cd89d9cb1e_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-17\\e7b510df-30d3-45b7-a65c-33cd89d9cb1e_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-18\\0f25c19f-fc94-4277-9ba7-e52c5c393e85_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-18\\0f25c19f-fc94-4277-9ba7-e52c5c393e85_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-18\\0f9ad695-3693-4fb8-a3a6-a7ebe2212f9d_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-18\\0f9ad695-3693-4fb8-a3a6-a7ebe2212f9d_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-18\\248efe11-79e5-42ad-b722-d6e038c9e985_samsung04.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-18\\248efe11-79e5-42ad-b722-d6e038c9e985_samsung04.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-18\\269488c9-da10-40e1-b76a-2bd9eafec518_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-18\\269488c9-da10-40e1-b76a-2bd9eafec518_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-18\\34a0ec4e-9abd-4f36-9158-de71d6dd27ea_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-18\\34a0ec4e-9abd-4f36-9158-de71d6dd27ea_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-18\\39a22b0d-a5e2-4f8a-b635-26050764d29c_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-18\\39a22b0d-a5e2-4f8a-b635-26050764d29c_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-18\\80e8ba3e-feab-41e1-bf49-d57ce9374aa6_samsung04.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-18\\80e8ba3e-feab-41e1-bf49-d57ce9374aa6_samsung04.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-18\\9ccbfc07-be95-4779-bf8d-b5768b67c7d6_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-18\\9ccbfc07-be95-4779-bf8d-b5768b67c7d6_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-18\\b91b2f22-8757-4512-aa8f-2827ceb1d7e8_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-18\\b91b2f22-8757-4512-aa8f-2827ceb1d7e8_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-18\\df64d2aa-6919-453a-8f2b-9e954e7e2b90_samsung01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-18\\df64d2aa-6919-453a-8f2b-9e954e7e2b90_samsung01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-18\\ed8dcf9a-0f4f-4e12-962d-4d9559fe553d_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-18\\ed8dcf9a-0f4f-4e12-962d-4d9559fe553d_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-19\\11e54d5e-8d8a-4bed-befd-91e25c248f29_Asus02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-19\\11e54d5e-8d8a-4bed-befd-91e25c248f29_Asus02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-19\\1d33cd0a-5b39-4e79-828b-bcc07c8ca8da_Asus03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-19\\1d33cd0a-5b39-4e79-828b-bcc07c8ca8da_Asus03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-19\\44fb723c-90e3-4448-9500-742a40c0c908_Asus01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-19\\44fb723c-90e3-4448-9500-742a40c0c908_Asus01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-19\\9da7a31e-a63a-46dc-a04b-b3e4b4c88cd1_Asus01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-19\\9da7a31e-a63a-46dc-a04b-b3e4b4c88cd1_Asus01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-19\\e4ff99ca-85c7-4608-bb56-7744d7335417_Asus02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-19\\e4ff99ca-85c7-4608-bb56-7744d7335417_Asus02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-19\\f4f63c85-c6cd-4d9e-8a4d-1d9f68b1bc5c_Asus03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-19\\f4f63c85-c6cd-4d9e-8a4d-1d9f68b1bc5c_Asus03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\0d81d208-b930-4bd8-b12f-ba35cc7f66ae_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\0d81d208-b930-4bd8-b12f-ba35cc7f66ae_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\2402cf49-a24d-432c-97ba-01153451b7ba_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\2402cf49-a24d-432c-97ba-01153451b7ba_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\26649fe7-5683-4569-84af-31efad16b6e2_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\26649fe7-5683-4569-84af-31efad16b6e2_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\49312ea4-54ac-42b8-a2ff-7f316311c3ab_Lenovo02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\49312ea4-54ac-42b8-a2ff-7f316311c3ab_Lenovo02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\5dcdb2b7-ab1f-4995-8e21-6b4562e0ee1e_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\5dcdb2b7-ab1f-4995-8e21-6b4562e0ee1e_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\646226eb-e6f3-419f-ae53-770583b51e2a_Lenovo03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\646226eb-e6f3-419f-ae53-770583b51e2a_Lenovo03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\9776276c-204b-4697-b5ac-992d8080290b_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\9776276c-204b-4697-b5ac-992d8080290b_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\9b50dde3-6baf-4b42-9416-3f0d9d9f567b_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\9b50dde3-6baf-4b42-9416-3f0d9d9f567b_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\a72f1dc6-8d76-496d-839a-5bb887ef5a31_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\a72f1dc6-8d76-496d-839a-5bb887ef5a31_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\b94f2ddf-0f47-45b9-ab7d-d22957aa9380_Lenovo01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\b94f2ddf-0f47-45b9-ab7d-d22957aa9380_Lenovo01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\dbcbc6dc-de15-4b93-902c-a7258625aa49_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\dbcbc6dc-de15-4b93-902c-a7258625aa49_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-1\\fdc7b002-cb9b-4ac9-b84a-b927716ef6a0_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1\\fdc7b002-cb9b-4ac9-b84a-b927716ef6a0_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-20\\934f266c-16dc-4659-992a-ed2181a11ef0_msi03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-20\\934f266c-16dc-4659-992a-ed2181a11ef0_msi03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-20\\9abf8b18-ed23-4162-b712-d5da512ba614_msi02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-20\\9abf8b18-ed23-4162-b712-d5da512ba614_msi02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-20\\b1bd0745-2374-41ed-a8f0-ba745a0a8b74_msi01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-20\\b1bd0745-2374-41ed-a8f0-ba745a0a8b74_msi01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-20\\c7030596-86be-42a8-a938-c8f9782c414c_msi02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-20\\c7030596-86be-42a8-a938-c8f9782c414c_msi02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-20\\c7c4b966-23e3-45cc-8977-99b4451be805_msi03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-20\\c7c4b966-23e3-45cc-8977-99b4451be805_msi03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-20\\dbf50799-a875-489f-afec-32beec6b5f58_msi03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-20\\dbf50799-a875-489f-afec-32beec6b5f58_msi03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-20\\efab7360-2943-4fe0-8b4d-4951d13d10ef_msi02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-20\\efab7360-2943-4fe0-8b4d-4951d13d10ef_msi02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-20\\f00a2e0e-c1a2-4fe7-ad9a-4dda34ea4f68_msi01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-20\\f00a2e0e-c1a2-4fe7-ad9a-4dda34ea4f68_msi01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-21\\1c1c84ac-b510-4786-ba87-fbd77c76dc2d_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-21\\1c1c84ac-b510-4786-ba87-fbd77c76dc2d_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-21\\476f3aa1-c56e-4a5b-bf60-6da3eba9f9b1_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-21\\476f3aa1-c56e-4a5b-bf60-6da3eba9f9b1_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-21\\4777ee52-f6d1-4071-b530-e0b7824ff1ca_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-21\\4777ee52-f6d1-4071-b530-e0b7824ff1ca_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-21\\6d5c3238-ca24-4cd5-861f-e608c48658e8_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-21\\6d5c3238-ca24-4cd5-861f-e608c48658e8_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-21\\6fb87322-7519-4ac8-9f6e-865a4efe03b4_samsung04.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-21\\6fb87322-7519-4ac8-9f6e-865a4efe03b4_samsung04.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-21\\a9729d8a-b08b-46a5-916e-65ecd82d3bca_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-21\\a9729d8a-b08b-46a5-916e-65ecd82d3bca_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-21\\b9e2af27-06e5-46a9-b6b4-084a192a195b_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-21\\b9e2af27-06e5-46a9-b6b4-084a192a195b_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-21\\c2a11faf-0cc3-4f8a-b816-c496403fc51d_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-21\\c2a11faf-0cc3-4f8a-b816-c496403fc51d_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-21\\d6bfe9b3-c638-4fac-b55c-08f47e50039f_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-21\\d6bfe9b3-c638-4fac-b55c-08f47e50039f_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-21\\ef6d81e1-fa72-45fb-b188-b7ef6fac4e60_samsung01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-21\\ef6d81e1-fa72-45fb-b188-b7ef6fac4e60_samsung01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-22\\3d312861-e0c2-40bb-b3f3-5ca175dc1510_Lenovo01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-22\\3d312861-e0c2-40bb-b3f3-5ca175dc1510_Lenovo01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-22\\4a879549-ae81-4641-9008-1f2e178ec2e1_Lenovo02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-22\\4a879549-ae81-4641-9008-1f2e178ec2e1_Lenovo02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-22\\5c9e8ea3-fc76-4bc2-9d40-23695afc0c9c_Lenovo03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-22\\5c9e8ea3-fc76-4bc2-9d40-23695afc0c9c_Lenovo03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-22\\63f9fe58-ba04-4476-8b0c-0317c4331731_Lenovo01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-22\\63f9fe58-ba04-4476-8b0c-0317c4331731_Lenovo01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-22\\75d7d182-66be-4804-85ca-44c7cef6388e_Lenovo02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-22\\75d7d182-66be-4804-85ca-44c7cef6388e_Lenovo02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-22\\8728a0e4-fab3-4c0e-9ca6-3c46d4f31bba_Lenovo03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-22\\8728a0e4-fab3-4c0e-9ca6-3c46d4f31bba_Lenovo03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-23\\1973fbaa-f584-4d57-9f09-59b0928e6d02_Razer03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-23\\1973fbaa-f584-4d57-9f09-59b0928e6d02_Razer03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-23\\35747e5c-0812-4a72-a976-78e5e4e3299c_Razer01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-23\\35747e5c-0812-4a72-a976-78e5e4e3299c_Razer01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-23\\50af15a5-48dd-49f3-9359-563c302c545a_Razer02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-23\\50af15a5-48dd-49f3-9359-563c302c545a_Razer02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-23\\68817c2e-b4e1-446d-9fe0-b1db7ce4bba7_Razer01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-23\\68817c2e-b4e1-446d-9fe0-b1db7ce4bba7_Razer01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-23\\a5fd8fa3-10b3-4047-a376-167ac67287c1_Razer02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-23\\a5fd8fa3-10b3-4047-a376-167ac67287c1_Razer02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-23\\df5e1568-1bdf-443c-b0a8-3af7ae4582fb_Razer03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-23\\df5e1568-1bdf-443c-b0a8-3af7ae4582fb_Razer03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-24\\069c17d1-b15e-4c01-ae6c-5d639d38307f_msi02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-24\\069c17d1-b15e-4c01-ae6c-5d639d38307f_msi02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-24\\2d82dd39-24db-4d98-a0da-34b6632ca247_msi02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-24\\2d82dd39-24db-4d98-a0da-34b6632ca247_msi02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-24\\5707e1b2-a744-4167-ade6-99f4d042c173_msi03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-24\\5707e1b2-a744-4167-ade6-99f4d042c173_msi03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-24\\9e13ac14-a910-4337-aade-18b39abae2d1_msi01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-24\\9e13ac14-a910-4337-aade-18b39abae2d1_msi01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-24\\ca999ec4-320b-409f-ae03-c0244d79c054_msi01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-24\\ca999ec4-320b-409f-ae03-c0244d79c054_msi01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-24\\d3f5e0cb-798e-4390-99b8-5ca3c99220ef_msi03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-24\\d3f5e0cb-798e-4390-99b8-5ca3c99220ef_msi03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-24\\e4dd4c02-1eaf-4425-b90a-2e86852fe046_msi02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-24\\e4dd4c02-1eaf-4425-b90a-2e86852fe046_msi02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-24\\f2fb8223-0fb8-4aaa-a6d3-600a593e9363_msi03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-24\\f2fb8223-0fb8-4aaa-a6d3-600a593e9363_msi03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-25\\0fd72612-7b3f-44cb-b478-6cecce61e3ed_Hp002.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-25\\0fd72612-7b3f-44cb-b478-6cecce61e3ed_Hp002.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-25\\1dbd240f-a658-48b6-babf-3c0064797210_HP03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-25\\1dbd240f-a658-48b6-babf-3c0064797210_HP03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-25\\31f38484-19c6-49d7-ad26-0115dbf32aa7_Hp002.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-25\\31f38484-19c6-49d7-ad26-0115dbf32aa7_Hp002.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-25\\43f8bd5a-be0f-42f0-b2bf-3db0638c19f1_HP03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-25\\43f8bd5a-be0f-42f0-b2bf-3db0638c19f1_HP03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-25\\6c296273-5402-4553-b589-a17fe8922694_hp01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-25\\6c296273-5402-4553-b589-a17fe8922694_hp01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-25\\74b72fc9-e6e3-482a-945c-bf5f5081b584_HP02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-25\\74b72fc9-e6e3-482a-945c-bf5f5081b584_HP02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-25\\9ce6f79d-80fb-49e7-844c-a5279a818e0a_HP02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-25\\9ce6f79d-80fb-49e7-844c-a5279a818e0a_HP02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-25\\ef16e1b4-d6fd-498b-bd69-3e100efe6465_Hp01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-25\\ef16e1b4-d6fd-498b-bd69-3e100efe6465_Hp01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-25\\ef43259d-daeb-43c0-bd4d-1b6fade6a3f5_HP01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-25\\ef43259d-daeb-43c0-bd4d-1b6fade6a3f5_HP01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-26\\11962c7b-20c9-4963-9735-d50da6265b11_HP02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-26\\11962c7b-20c9-4963-9735-d50da6265b11_HP02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-26\\354efcdb-a471-4d33-89aa-869c5b438d19_HP03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-26\\354efcdb-a471-4d33-89aa-869c5b438d19_HP03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-26\\3767492b-204a-48ed-8f08-305d1c289f31_HP03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-26\\3767492b-204a-48ed-8f08-305d1c289f31_HP03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-26\\5bf3d7fe-ba59-4dd3-a271-87a6b7036d46_Hp02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-26\\5bf3d7fe-ba59-4dd3-a271-87a6b7036d46_Hp02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-26\\884b662d-67e5-48b9-949d-fc6f052a088c_HP01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-26\\884b662d-67e5-48b9-949d-fc6f052a088c_HP01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-26\\aeb599fa-b4df-4d73-b955-dce58f4f8a06_HP02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-26\\aeb599fa-b4df-4d73-b955-dce58f4f8a06_HP02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-26\\b4e3bb60-7d5c-47ba-8f9a-e539d9932751_Hp01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-26\\b4e3bb60-7d5c-47ba-8f9a-e539d9932751_Hp01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-26\\de6af998-1aa6-4243-956c-d9992d65f39d_hp001.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-26\\de6af998-1aa6-4243-956c-d9992d65f39d_hp001.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-27\\5155a51d-0652-4a0a-9680-a7b0aee596f2_Asus02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-27\\5155a51d-0652-4a0a-9680-a7b0aee596f2_Asus02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-27\\616df6a7-f0b1-4296-8f65-7def8f584caf_Asus01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-27\\616df6a7-f0b1-4296-8f65-7def8f584caf_Asus01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-27\\6262345b-f750-43ca-8a62-c8475f80c538_Asus01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-27\\6262345b-f750-43ca-8a62-c8475f80c538_Asus01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-27\\865c6ac3-84c2-4d97-bda3-d3504c21e93b_Asus03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-27\\865c6ac3-84c2-4d97-bda3-d3504c21e93b_Asus03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-27\\94244577-773c-4c30-a16b-84086a8ee179_Asus02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-27\\94244577-773c-4c30-a16b-84086a8ee179_Asus02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-27\\d1ec12a0-8e44-4a39-84c4-e181abd8a793_Asus03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-27\\d1ec12a0-8e44-4a39-84c4-e181abd8a793_Asus03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-28\\2e178ae3-919d-4677-94e0-efce5386d3dd_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-28\\2e178ae3-919d-4677-94e0-efce5386d3dd_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-28\\2fddb219-b23d-43ba-b5d0-4e34c75e6706_samsung01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-28\\2fddb219-b23d-43ba-b5d0-4e34c75e6706_samsung01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-28\\3c3b74f3-564e-442c-8b1a-6176c480a6e0_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-28\\3c3b74f3-564e-442c-8b1a-6176c480a6e0_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-28\\4ad07e9e-5cbb-4be8-aaae-a4baea84b28a_samsung04.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-28\\4ad07e9e-5cbb-4be8-aaae-a4baea84b28a_samsung04.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-28\\50905a03-cf81-42e5-98ce-ce719b12a190_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-28\\50905a03-cf81-42e5-98ce-ce719b12a190_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-28\\70292c9a-3ba7-40a9-b2a1-88ac2aef1e3f_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-28\\70292c9a-3ba7-40a9-b2a1-88ac2aef1e3f_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-28\\a350ad87-63ec-46b8-9cb0-eeb74ee555b9_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-28\\a350ad87-63ec-46b8-9cb0-eeb74ee555b9_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-28\\bfc76b68-9b90-4548-93ad-19e6e16388db_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-28\\bfc76b68-9b90-4548-93ad-19e6e16388db_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-28\\c5c6edf1-543d-4db9-8c10-c5f864c52e8e_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-28\\c5c6edf1-543d-4db9-8c10-c5f864c52e8e_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-28\\fa8430e2-4527-44c8-80f4-466db442b3d9_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-28\\fa8430e2-4527-44c8-80f4-466db442b3d9_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-29\\2cbdcad2-93e3-4ea5-a14a-2bb3b8994c9b_msi03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-29\\2cbdcad2-93e3-4ea5-a14a-2bb3b8994c9b_msi03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-29\\48541383-8746-429e-b1fd-55baa881e261_msi01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-29\\48541383-8746-429e-b1fd-55baa881e261_msi01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-29\\6773539a-487d-4925-a7ba-47af13b73357_msi01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-29\\6773539a-487d-4925-a7ba-47af13b73357_msi01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-29\\7c6d0042-f9e6-45c8-8575-cf6ce4e6376e_msi02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-29\\7c6d0042-f9e6-45c8-8575-cf6ce4e6376e_msi02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-29\\8fade5df-2569-46af-b9df-77c08e677e2c_msi03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-29\\8fade5df-2569-46af-b9df-77c08e677e2c_msi03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-29\\b931a8bf-8df2-4d23-969b-96bbebc4babc_msi02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-29\\b931a8bf-8df2-4d23-969b-96bbebc4babc_msi02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-29\\c40bb9af-c45e-474d-822e-3c56b3ef2f90_msi02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-29\\c40bb9af-c45e-474d-822e-3c56b3ef2f90_msi02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-29\\e7f48eee-612c-435e-951f-b393e343c2bd_msi03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-29\\e7f48eee-612c-435e-951f-b393e343c2bd_msi03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-2\\11fc8488-0acf-4c4b-9633-ac6e5a1847c5_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-2\\11fc8488-0acf-4c4b-9633-ac6e5a1847c5_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-2\\20ab5bbb-475d-4ce2-b940-8a629f10c61a_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-2\\20ab5bbb-475d-4ce2-b940-8a629f10c61a_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-2\\489013f1-d168-4082-b9d5-b0401e7b85de_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-2\\489013f1-d168-4082-b9d5-b0401e7b85de_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-2\\8af46840-583e-4587-9219-f1082dd0a7e6_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-2\\8af46840-583e-4587-9219-f1082dd0a7e6_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-2\\a1f2a220-dc8e-4907-ba72-efa2f6046552_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-2\\a1f2a220-dc8e-4907-ba72-efa2f6046552_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-2\\e820af9a-b9a3-4ef1-9a90-83fe211dd176_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-2\\e820af9a-b9a3-4ef1-9a90-83fe211dd176_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-30\\4c68b0a3-ad58-4a66-809a-809d26a716eb_Acer01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-30\\4c68b0a3-ad58-4a66-809a-809d26a716eb_Acer01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-30\\b2ed2844-858d-4703-975f-6dd833b793a9_Acer02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-30\\b2ed2844-858d-4703-975f-6dd833b793a9_Acer02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-30\\b41b41fa-c37c-4266-91e0-f9534ace1407_Acer03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-30\\b41b41fa-c37c-4266-91e0-f9534ace1407_Acer03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-31\\004bbbf3-8355-4e41-be81-5a4c227c2d58_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-31\\004bbbf3-8355-4e41-be81-5a4c227c2d58_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-31\\37a657af-5fef-4db1-a57d-2d75afd35869_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-31\\37a657af-5fef-4db1-a57d-2d75afd35869_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-31\\47c80fbf-7f81-4203-bbdd-d1b8d0da7570_samsung01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-31\\47c80fbf-7f81-4203-bbdd-d1b8d0da7570_samsung01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-31\\66d6ea69-906b-4815-b29a-5a4229bfc84b_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-31\\66d6ea69-906b-4815-b29a-5a4229bfc84b_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-31\\8e9cb430-12a8-4a24-adc9-12e3458a8d0d_samsung04.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-31\\8e9cb430-12a8-4a24-adc9-12e3458a8d0d_samsung04.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-31\\c1e3baec-fff3-4b77-b76c-893eecdf5cf9_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-31\\c1e3baec-fff3-4b77-b76c-893eecdf5cf9_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-31\\c94376f6-1f66-4100-96f6-7122032b5294_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-31\\c94376f6-1f66-4100-96f6-7122032b5294_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-31\\cdd44f02-cee1-43ac-821d-482667848561_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-31\\cdd44f02-cee1-43ac-821d-482667848561_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-31\\d545daff-0fb2-4f7b-adce-47cc34de823b_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-31\\d545daff-0fb2-4f7b-adce-47cc34de823b_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-31\\dc4433a6-76b9-4121-9dbd-f1a8a7c934f8_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-31\\dc4433a6-76b9-4121-9dbd-f1a8a7c934f8_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-32\\11f72628-40d3-48d9-96d2-082ac94baa09_Asus03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-32\\11f72628-40d3-48d9-96d2-082ac94baa09_Asus03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-32\\142475d9-b396-46d4-999e-ac08112066c0_Asus03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-32\\142475d9-b396-46d4-999e-ac08112066c0_Asus03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-32\\3a6ee89d-216d-4e71-ac88-16ae404bf8e9_Asus01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-32\\3a6ee89d-216d-4e71-ac88-16ae404bf8e9_Asus01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-32\\3a80593f-c060-4596-84d9-058350f9b268_Asus02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-32\\3a80593f-c060-4596-84d9-058350f9b268_Asus02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-32\\a42eedcd-f2ad-4e56-981f-d0d56e850673_Asus01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-32\\a42eedcd-f2ad-4e56-981f-d0d56e850673_Asus01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-32\\fb07f173-cc0c-4dcd-86d9-4e6b12ca0235_Asus02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-32\\fb07f173-cc0c-4dcd-86d9-4e6b12ca0235_Asus02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-33\\7131310d-907a-4a5d-b07d-574fd5a40f66_Asus01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-33\\7131310d-907a-4a5d-b07d-574fd5a40f66_Asus01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-33\\869130fc-054b-4718-a155-97c2f32df860_Asus01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-33\\869130fc-054b-4718-a155-97c2f32df860_Asus01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-33\\8bb6c0e2-e72f-41ff-8775-76dd0a7b85be_Asus03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-33\\8bb6c0e2-e72f-41ff-8775-76dd0a7b85be_Asus03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-33\\c3fbbb78-d6df-4c83-b37f-73efd4a86347_Asus03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-33\\c3fbbb78-d6df-4c83-b37f-73efd4a86347_Asus03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-33\\ce9db2fa-a7a8-4bec-b850-334ae798ef5e_Asus02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-33\\ce9db2fa-a7a8-4bec-b850-334ae798ef5e_Asus02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-33\\e9c832f9-1c4d-4c93-8e4c-f14987e8217b_Asus02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-33\\e9c832f9-1c4d-4c93-8e4c-f14987e8217b_Asus02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-34\\5a78f704-cd28-42b8-a51d-246cc76599ac_Asus01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-34\\5a78f704-cd28-42b8-a51d-246cc76599ac_Asus01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-34\\63a94812-90f7-4374-8131-2069e4e6f82b_Asus03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-34\\63a94812-90f7-4374-8131-2069e4e6f82b_Asus03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-34\\8fdde0f2-48db-4e33-a346-dc9012701328_Asus03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-34\\8fdde0f2-48db-4e33-a346-dc9012701328_Asus03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-34\\b8a9045b-66c5-442b-9395-54bda5b74f9a_Asus02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-34\\b8a9045b-66c5-442b-9395-54bda5b74f9a_Asus02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-34\\bb1b726b-6b3b-4557-99d2-2e240c1f6d38_Asus01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-34\\bb1b726b-6b3b-4557-99d2-2e240c1f6d38_Asus01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-34\\ecbf8aaf-d11e-4dde-b988-69e9acbb34e5_Asus02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-34\\ecbf8aaf-d11e-4dde-b988-69e9acbb34e5_Asus02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-35\\10454c87-ba97-4a39-b227-f7fff33e39d9_msi01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-35\\10454c87-ba97-4a39-b227-f7fff33e39d9_msi01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-35\\44c650b6-3275-4e94-9698-1f55af5ab4a6_msi03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-35\\44c650b6-3275-4e94-9698-1f55af5ab4a6_msi03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-35\\5c34fda5-5bdb-4405-a9a3-2e92e47285e8_msi01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-35\\5c34fda5-5bdb-4405-a9a3-2e92e47285e8_msi01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-35\\7278a248-0847-4193-a386-456ac50be189_msi02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-35\\7278a248-0847-4193-a386-456ac50be189_msi02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-35\\d60f2c1a-7ccd-4d6f-bf6f-bf53d589c5e5_msi03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-35\\d60f2c1a-7ccd-4d6f-bf6f-bf53d589c5e5_msi03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-35\\e41762b7-5bc1-4406-a1a3-a6fd9254af69_msi02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-35\\e41762b7-5bc1-4406-a1a3-a6fd9254af69_msi02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-36\\0805ae03-2f5d-4620-ae3a-a91628560199_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-36\\0805ae03-2f5d-4620-ae3a-a91628560199_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-36\\22b82517-2937-44ff-a208-128c0b003a0b_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-36\\22b82517-2937-44ff-a208-128c0b003a0b_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-36\\36c509ad-6373-4f71-9bed-f743cca28421_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-36\\36c509ad-6373-4f71-9bed-f743cca28421_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-36\\4516dd26-ef6c-499c-a199-cc32b9e11579_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-36\\4516dd26-ef6c-499c-a199-cc32b9e11579_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-36\\64108862-a3e2-44cf-927a-b017cccf0265_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-36\\64108862-a3e2-44cf-927a-b017cccf0265_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-36\\6a4c20e0-70a7-4f56-8d55-6bafa77fefbf_samsung01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-36\\6a4c20e0-70a7-4f56-8d55-6bafa77fefbf_samsung01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-36\\b8d227ad-5b81-4e45-bfc2-4c73b51c1fa7_samsung04.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-36\\b8d227ad-5b81-4e45-bfc2-4c73b51c1fa7_samsung04.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-36\\bbcfc302-9745-4f48-90aa-980af9d09b18_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-36\\bbcfc302-9745-4f48-90aa-980af9d09b18_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-36\\d5720744-1387-450b-95f2-7f85a3f8fff4_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-36\\d5720744-1387-450b-95f2-7f85a3f8fff4_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-36\\ec505b7e-47ef-48ab-b99e-5d5366700ce4_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-36\\ec505b7e-47ef-48ab-b99e-5d5366700ce4_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-37\\30180180-e4cb-4af6-8443-3e9cae3ac93f_Asus01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-37\\30180180-e4cb-4af6-8443-3e9cae3ac93f_Asus01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-37\\352bb703-ec94-46b0-a8c6-9bc2b86b7712_Asus02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-37\\352bb703-ec94-46b0-a8c6-9bc2b86b7712_Asus02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-37\\3cc444b7-b1c5-48c3-b863-3bb3857ab23e_Asus03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-37\\3cc444b7-b1c5-48c3-b863-3bb3857ab23e_Asus03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-37\\b7b5b34b-114d-4e72-86bd-62d5b11593aa_Asus03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-37\\b7b5b34b-114d-4e72-86bd-62d5b11593aa_Asus03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-37\\e87bb1d9-78ab-4426-b202-e7cf827caee2_Asus01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-37\\e87bb1d9-78ab-4426-b202-e7cf827caee2_Asus01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-37\\f3a1ca1d-1c1c-4e67-a811-1943817b7ed7_Asus02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-37\\f3a1ca1d-1c1c-4e67-a811-1943817b7ed7_Asus02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-38\\1987a7c4-2769-499c-9805-f1b3aa2b028b_Asus01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-38\\1987a7c4-2769-499c-9805-f1b3aa2b028b_Asus01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-38\\86adf3ef-7fe2-482f-9314-91a62c473f1b_Asus02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-38\\86adf3ef-7fe2-482f-9314-91a62c473f1b_Asus02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-38\\877e03fe-c50e-4b41-9a0b-299b4b38e5c8_Asus02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-38\\877e03fe-c50e-4b41-9a0b-299b4b38e5c8_Asus02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-38\\a74e77d8-f9fc-409c-8a4d-e1087a14a8f6_Asus03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-38\\a74e77d8-f9fc-409c-8a4d-e1087a14a8f6_Asus03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-38\\ee01fad2-1a2d-4911-b8ae-8485d5b0c198_Asus03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-38\\ee01fad2-1a2d-4911-b8ae-8485d5b0c198_Asus03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-38\\f16a61af-b84a-418c-9d93-e1fa71a71457_Asus01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-38\\f16a61af-b84a-418c-9d93-e1fa71a71457_Asus01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-39\\24b19430-eebe-4bf2-915a-69f84cc2774d_msi03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-39\\24b19430-eebe-4bf2-915a-69f84cc2774d_msi03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-39\\2654ef5a-d610-4ace-babc-109f07790a2e_msi01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-39\\2654ef5a-d610-4ace-babc-109f07790a2e_msi01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-39\\67a48060-b15c-4e56-aed8-a18327d5c9bb_msi02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-39\\67a48060-b15c-4e56-aed8-a18327d5c9bb_msi02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-39\\725568aa-85c1-40fa-88d1-d9b52b11dd87_msi01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-39\\725568aa-85c1-40fa-88d1-d9b52b11dd87_msi01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-39\\b94b7273-2322-40c1-9527-f2c017abaa6d_msi02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-39\\b94b7273-2322-40c1-9527-f2c017abaa6d_msi02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-39\\d7e819f7-4f95-415a-8cd4-5bc5cffcd101_msi03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-39\\d7e819f7-4f95-415a-8cd4-5bc5cffcd101_msi03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-3\\02985f0d-adf1-4c35-84a9-455721e963b2_Acer01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-3\\02985f0d-adf1-4c35-84a9-455721e963b2_Acer01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-3\\3ff378bc-c4ff-47ce-ade4-c9d23618bdd7_Acer03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-3\\3ff378bc-c4ff-47ce-ade4-c9d23618bdd7_Acer03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-3\\fff66e19-9e32-499b-9912-a287240a13e9_Acer02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-3\\fff66e19-9e32-499b-9912-a287240a13e9_Acer02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-40\\12f2ea34-f5c0-4c70-a8c7-0fd578939490_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-40\\12f2ea34-f5c0-4c70-a8c7-0fd578939490_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-40\\1ac565ac-f4be-4c00-9999-51ad426d9ce9_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-40\\1ac565ac-f4be-4c00-9999-51ad426d9ce9_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-40\\3f3a235e-f77c-43d1-a49a-993fa6b7508f_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-40\\3f3a235e-f77c-43d1-a49a-993fa6b7508f_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-40\\6391f70f-2d45-4169-83e9-5204fd19ccc9_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-40\\6391f70f-2d45-4169-83e9-5204fd19ccc9_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-40\\6c4a019e-a124-4513-a17d-b0f89f6064b4_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-40\\6c4a019e-a124-4513-a17d-b0f89f6064b4_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-40\\a0349766-186f-4207-bdac-b89fad281710_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-40\\a0349766-186f-4207-bdac-b89fad281710_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-40\\cfb110c4-6554-41fc-be9a-e22ade64ee6e_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-40\\cfb110c4-6554-41fc-be9a-e22ade64ee6e_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-40\\db0de51b-d1b9-49aa-b98b-0b1f16e2ea60_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-40\\db0de51b-d1b9-49aa-b98b-0b1f16e2ea60_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-41\\1f13bb7c-2205-46a9-8012-57617bd4044e_Lenovo02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-41\\1f13bb7c-2205-46a9-8012-57617bd4044e_Lenovo02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-41\\25816d39-900a-4664-91c5-76a820482145_Lenovo01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-41\\25816d39-900a-4664-91c5-76a820482145_Lenovo01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-41\\26f95679-93a7-4219-acfe-515ee6447742_Lenovo02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-41\\26f95679-93a7-4219-acfe-515ee6447742_Lenovo02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-41\\40e34a68-6602-4d35-93b3-b9ebd78efe0b_Lenovo01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-41\\40e34a68-6602-4d35-93b3-b9ebd78efe0b_Lenovo01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-41\\8628c054-2d5c-417e-bc6b-75a8a2b9c848_Lenovo03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-41\\8628c054-2d5c-417e-bc6b-75a8a2b9c848_Lenovo03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-41\\cbb5b33d-a966-4e70-93a4-3e4c74a37b8b_Lenovo03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-41\\cbb5b33d-a966-4e70-93a4-3e4c74a37b8b_Lenovo03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-42\\3d470979-b9c4-47da-b7f6-3c11e940cbfa_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-42\\3d470979-b9c4-47da-b7f6-3c11e940cbfa_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-42\\47880b48-1bad-40f7-b0d4-39b21ad789b3_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-42\\47880b48-1bad-40f7-b0d4-39b21ad789b3_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-42\\86d867b4-bd79-47c4-9fbb-9d04b62a7eca_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-42\\86d867b4-bd79-47c4-9fbb-9d04b62a7eca_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-42\\918dddbc-f916-4c07-bd24-5532fd2a047a_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-42\\918dddbc-f916-4c07-bd24-5532fd2a047a_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-42\\9a9bb758-f5b9-4e44-bc86-317094d26bc6_samsung04.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-42\\9a9bb758-f5b9-4e44-bc86-317094d26bc6_samsung04.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-42\\a8941dc7-fbd3-40ec-ab10-25c8291a0252_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-42\\a8941dc7-fbd3-40ec-ab10-25c8291a0252_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-42\\b7fc12e7-ab1e-4a5b-9073-fd3a70b18615_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-42\\b7fc12e7-ab1e-4a5b-9073-fd3a70b18615_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-42\\bce5b5ba-707a-4678-8845-115eba7906cb_samsung01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-42\\bce5b5ba-707a-4678-8845-115eba7906cb_samsung01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-42\\f2c81a01-1403-43ad-bf9b-fac959c64a87_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-42\\f2c81a01-1403-43ad-bf9b-fac959c64a87_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-42\\f449a616-d4eb-45bb-84d9-12240c73f435_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-42\\f449a616-d4eb-45bb-84d9-12240c73f435_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-43\\21229d07-8fcb-4473-a5db-2401cb7656c5_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-43\\21229d07-8fcb-4473-a5db-2401cb7656c5_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-43\\3f4c46ce-2504-4724-b1b5-34a646a63562_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-43\\3f4c46ce-2504-4724-b1b5-34a646a63562_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-43\\4e510df5-22bf-4672-8dd9-da8904529282_samsung01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-43\\4e510df5-22bf-4672-8dd9-da8904529282_samsung01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-43\\73732b7c-fa38-40ad-bb86-950b2c8303ab_samsung04.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-43\\73732b7c-fa38-40ad-bb86-950b2c8303ab_samsung04.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-43\\878d08c2-6ec1-4f2c-855a-78efba1733fc_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-43\\878d08c2-6ec1-4f2c-855a-78efba1733fc_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-43\\c120730b-4ab4-42d5-986d-5830e0f2d270_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-43\\c120730b-4ab4-42d5-986d-5830e0f2d270_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-43\\cbf8c376-afe9-4fa0-b3d8-7b3f757435cd_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-43\\cbf8c376-afe9-4fa0-b3d8-7b3f757435cd_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-43\\d92c4b39-dff1-4624-81dc-c1ab831d44db_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-43\\d92c4b39-dff1-4624-81dc-c1ab831d44db_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-43\\e09028f6-905a-42e9-9214-d009a0579663_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-43\\e09028f6-905a-42e9-9214-d009a0579663_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-43\\f0219eb6-942c-453d-adde-c64bd2aaf953_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-43\\f0219eb6-942c-453d-adde-c64bd2aaf953_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-43\\ff5446ef-d31d-45c3-9e16-65d167bb7fc8_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-43\\ff5446ef-d31d-45c3-9e16-65d167bb7fc8_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-44\\1379a882-7f5b-4d84-89c4-def52d6d9a49_Lenovo01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-44\\1379a882-7f5b-4d84-89c4-def52d6d9a49_Lenovo01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-44\\1ace7b52-c5a6-4652-80b0-885f65529972_Lenovo02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-44\\1ace7b52-c5a6-4652-80b0-885f65529972_Lenovo02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-44\\209e1f1c-4b3c-4b18-a13c-ed0c4afd519b_Lenovo03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-44\\209e1f1c-4b3c-4b18-a13c-ed0c4afd519b_Lenovo03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-44\\4c8f65d0-20e9-4d3f-91cc-6fd07904e409_Lenovo03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-44\\4c8f65d0-20e9-4d3f-91cc-6fd07904e409_Lenovo03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-44\\c2105c57-4e1c-4fca-8dc3-4d4e16b894c0_Lenovo01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-44\\c2105c57-4e1c-4fca-8dc3-4d4e16b894c0_Lenovo01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-44\\f0e8c613-5140-4fd7-8d7e-70c239c3bcc8_Lenovo02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-44\\f0e8c613-5140-4fd7-8d7e-70c239c3bcc8_Lenovo02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-45\\0b6a6192-fde0-42c6-9d8e-7fe240e7d87a_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-45\\0b6a6192-fde0-42c6-9d8e-7fe240e7d87a_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-45\\329ef211-0fc5-489c-8a6e-3cebde352eee_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-45\\329ef211-0fc5-489c-8a6e-3cebde352eee_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-45\\3f2fa5f6-54ab-49bc-babc-1599d8f30d2c_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-45\\3f2fa5f6-54ab-49bc-babc-1599d8f30d2c_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-45\\6390cbb4-a37c-4cfa-803b-28a734942745_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-45\\6390cbb4-a37c-4cfa-803b-28a734942745_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-45\\ae5f2abb-84ca-48e8-aa7f-1232bec9b2a2_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-45\\ae5f2abb-84ca-48e8-aa7f-1232bec9b2a2_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-45\\aeeec795-71d3-4e7c-ba3f-95fc71760971_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-45\\aeeec795-71d3-4e7c-ba3f-95fc71760971_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-45\\bcdcabd4-08d3-4d4a-a575-199ea5549a33_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-45\\bcdcabd4-08d3-4d4a-a575-199ea5549a33_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-45\\f4fa1f47-5b93-4fa0-a86d-b4c7fa19e48c_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-45\\f4fa1f47-5b93-4fa0-a86d-b4c7fa19e48c_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-46\\57e52379-362a-41a5-9a28-6bbe5e36c231_Lenovo02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-46\\57e52379-362a-41a5-9a28-6bbe5e36c231_Lenovo02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-46\\5b903906-91fa-4cce-88da-661060e28c8f_Lenovo03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-46\\5b903906-91fa-4cce-88da-661060e28c8f_Lenovo03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-46\\afa9da8b-b640-41ba-8b2c-4d7e5856e66f_Lenovo01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-46\\afa9da8b-b640-41ba-8b2c-4d7e5856e66f_Lenovo01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-46\\ebf31e04-2935-4df4-a3cc-94af8cad1b19_Lenovo03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-46\\ebf31e04-2935-4df4-a3cc-94af8cad1b19_Lenovo03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-46\\f93758ed-6ed8-4bfb-b892-c66b4b19a018_Lenovo02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-46\\f93758ed-6ed8-4bfb-b892-c66b4b19a018_Lenovo02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-46\\ff977f8e-41db-4ca2-a027-96087b5bd5d6_Lenovo01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-46\\ff977f8e-41db-4ca2-a027-96087b5bd5d6_Lenovo01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-47\\204ecb47-dc73-4b65-9726-ce1a917a2890_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-47\\204ecb47-dc73-4b65-9726-ce1a917a2890_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-47\\25bd864a-2c79-4cd0-bd25-9aaafc994707_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-47\\25bd864a-2c79-4cd0-bd25-9aaafc994707_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-47\\77a682d8-baa5-4855-a382-1e263febabf5_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-47\\77a682d8-baa5-4855-a382-1e263febabf5_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-47\\890e234e-04e7-4622-b99b-22b67ab22a03_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-47\\890e234e-04e7-4622-b99b-22b67ab22a03_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-47\\b7221cd2-c5eb-40a5-8756-4f257a74dcf2_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-47\\b7221cd2-c5eb-40a5-8756-4f257a74dcf2_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-47\\d384cef0-6af8-43f2-b581-bf081bdba143_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-47\\d384cef0-6af8-43f2-b581-bf081bdba143_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-48\\249fc521-d516-4b27-9c9a-f4a7ed907e9b_Asus03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-48\\249fc521-d516-4b27-9c9a-f4a7ed907e9b_Asus03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-48\\2bb16b5d-e191-40a3-a01c-7b0ab83febe9_Asus02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-48\\2bb16b5d-e191-40a3-a01c-7b0ab83febe9_Asus02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-48\\7bc1d8b0-d369-46a4-9e4c-a7baab64e22e_Asus01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-48\\7bc1d8b0-d369-46a4-9e4c-a7baab64e22e_Asus01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-48\\8c704590-aae5-4dba-87a3-21b7d2e897cc_Asus01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-48\\8c704590-aae5-4dba-87a3-21b7d2e897cc_Asus01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-48\\dfd0e91e-c971-486e-9b38-17c550c42f0f_Asus03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-48\\dfd0e91e-c971-486e-9b38-17c550c42f0f_Asus03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-48\\f471053e-e58b-4560-b09e-edc474f9efd8_Asus02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-48\\f471053e-e58b-4560-b09e-edc474f9efd8_Asus02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-49\\21e2d573-7a42-4bc8-991f-0bb82d7dd1cd_Lenovo02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-49\\21e2d573-7a42-4bc8-991f-0bb82d7dd1cd_Lenovo02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-49\\4b7d3c66-f95c-4d34-a035-b121c0189e4f_Lenovo03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-49\\4b7d3c66-f95c-4d34-a035-b121c0189e4f_Lenovo03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-49\\59ed7290-9f09-4aee-8d08-f5e1cace8641_Lenovo01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-49\\59ed7290-9f09-4aee-8d08-f5e1cace8641_Lenovo01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-49\\cf75f531-ef4f-402d-a847-10125e3fffe6_Lenovo02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-49\\cf75f531-ef4f-402d-a847-10125e3fffe6_Lenovo02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-49\\e3ffd8a1-d681-4e57-a75c-cc2f6f3b7bd1_Lenovo03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-49\\e3ffd8a1-d681-4e57-a75c-cc2f6f3b7bd1_Lenovo03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-49\\f591ed6b-5656-4af0-abb2-6bc6db90ba2e_Lenovo01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-49\\f591ed6b-5656-4af0-abb2-6bc6db90ba2e_Lenovo01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-4\\33fb86e4-f890-442a-824f-74bfaf469b4a_Razer03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-4\\33fb86e4-f890-442a-824f-74bfaf469b4a_Razer03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-4\\5545235b-d744-4a8d-ae4e-656ebbdd60d9_Razer02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-4\\5545235b-d744-4a8d-ae4e-656ebbdd60d9_Razer02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-4\\6333ae39-e002-42f8-87e8-5477bd5a59d2_Razer03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-4\\6333ae39-e002-42f8-87e8-5477bd5a59d2_Razer03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-4\\6ed2bcdf-a9cc-4eea-ad21-84c92630605c_Razer01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-4\\6ed2bcdf-a9cc-4eea-ad21-84c92630605c_Razer01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-4\\95eb154f-811a-4355-93a7-7df6f896d9f0_Razer01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-4\\95eb154f-811a-4355-93a7-7df6f896d9f0_Razer01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-4\\9bb6634a-1d0f-40f1-8659-95b819da7f32_Razer03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-4\\9bb6634a-1d0f-40f1-8659-95b819da7f32_Razer03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-4\\ece1db22-7cb5-4866-b02e-6c5fe6d11fdf_Razer02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-4\\ece1db22-7cb5-4866-b02e-6c5fe6d11fdf_Razer02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\078651f9-3680-4c5b-bd36-f10b321fc27c_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\078651f9-3680-4c5b-bd36-f10b321fc27c_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\1179d492-e20f-453f-aaf2-79b708e38acb_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\1179d492-e20f-453f-aaf2-79b708e38acb_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\20035c92-560e-4ca3-a36d-e3f3f82efd2c_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\20035c92-560e-4ca3-a36d-e3f3f82efd2c_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\3ecd546a-8904-430f-808c-b893114df4f4_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\3ecd546a-8904-430f-808c-b893114df4f4_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\4dc8633d-17b3-43b8-9ab2-997603a380d4_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\4dc8633d-17b3-43b8-9ab2-997603a380d4_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\5325495e-48bb-4d6e-971f-42056225e9f4_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\5325495e-48bb-4d6e-971f-42056225e9f4_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\60da878c-625f-4e99-a047-c8a89d332b4d_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\60da878c-625f-4e99-a047-c8a89d332b4d_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\70e99700-c1e1-427a-9247-8025b737ac31_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\70e99700-c1e1-427a-9247-8025b737ac31_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\857ae027-ef37-4155-a8bb-1898754c0e71_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\857ae027-ef37-4155-a8bb-1898754c0e71_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\aaef4a85-c99a-4c6f-9381-08adade156bc_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\aaef4a85-c99a-4c6f-9381-08adade156bc_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\bf42b0eb-37e3-4e6f-bc4f-ecd19fec6a44_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\bf42b0eb-37e3-4e6f-bc4f-ecd19fec6a44_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-50\\e9079008-3e77-4ffa-b0d1-88d0004af4dc_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-50\\e9079008-3e77-4ffa-b0d1-88d0004af4dc_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-52\\1489ab8b-1153-446c-bdd1-3d7c1650ef4b_Razer03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-52\\1489ab8b-1153-446c-bdd1-3d7c1650ef4b_Razer03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-52\\5107c3e8-6bd8-4e96-aac7-9ca93ab52db5_Razer02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-52\\5107c3e8-6bd8-4e96-aac7-9ca93ab52db5_Razer02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-52\\7dfcabef-014f-46c2-b87b-bab44b61c3a7_Razer01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-52\\7dfcabef-014f-46c2-b87b-bab44b61c3a7_Razer01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-52\\b7e0bc29-6fdd-4c20-a38e-8f75adbf783d_Razer01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-52\\b7e0bc29-6fdd-4c20-a38e-8f75adbf783d_Razer01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-52\\bd4cdd9f-842a-4908-9fc1-6c398e60fe2c_Razer02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-52\\bd4cdd9f-842a-4908-9fc1-6c398e60fe2c_Razer02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-52\\dfd5b095-721f-4b90-8e5e-5164e8b392ec_Razer03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-52\\dfd5b095-721f-4b90-8e5e-5164e8b392ec_Razer03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-53\\657b59a9-61d2-4052-9154-edd4936dda3b_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-53\\657b59a9-61d2-4052-9154-edd4936dda3b_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-53\\9c669117-73fb-4695-bb02-c594580d8be9_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-53\\9c669117-73fb-4695-bb02-c594580d8be9_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-53\\9e4f2e9a-9f9b-472b-84e8-088ca136bdf3_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-53\\9e4f2e9a-9f9b-472b-84e8-088ca136bdf3_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-53\\d2b21e8d-23e8-4c16-a6a4-bdb79907d0e0_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-53\\d2b21e8d-23e8-4c16-a6a4-bdb79907d0e0_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-53\\dce062da-fc08-44c6-a852-661adfa7ed42_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-53\\dce062da-fc08-44c6-a852-661adfa7ed42_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-53\\e1fa79e5-3c8a-4acb-9ba6-84669f2596e2_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-53\\e1fa79e5-3c8a-4acb-9ba6-84669f2596e2_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-5\\1f345a6e-1821-4f91-b3e3-8411a7094b86_Asus01.avif",
+      "PackagePath": "staticwebassets\\images\\products\\product-5\\1f345a6e-1821-4f91-b3e3-8411a7094b86_Asus01.avif"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-5\\4f99219c-1104-42f2-922f-ac8cf89ae340_Asus03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-5\\4f99219c-1104-42f2-922f-ac8cf89ae340_Asus03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-5\\6e66747b-5fa5-4bc8-a2ab-a15a09b94990_Asus02.avif",
+      "PackagePath": "staticwebassets\\images\\products\\product-5\\6e66747b-5fa5-4bc8-a2ab-a15a09b94990_Asus02.avif"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-5\\9eb488f3-5518-46c4-a734-49d70b56f029_Asus02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-5\\9eb488f3-5518-46c4-a734-49d70b56f029_Asus02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-5\\a298aadf-76b8-43d3-a915-7f133a206be1_Asus03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-5\\a298aadf-76b8-43d3-a915-7f133a206be1_Asus03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-5\\a86c168a-5c0a-4d1a-84e5-759a3b7d7ad0_Asus03.avif",
+      "PackagePath": "staticwebassets\\images\\products\\product-5\\a86c168a-5c0a-4d1a-84e5-759a3b7d7ad0_Asus03.avif"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-5\\bba590a7-9623-42e9-b6fe-cce2d74c7492_Asus01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-5\\bba590a7-9623-42e9-b6fe-cce2d74c7492_Asus01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-5\\c4e653b9-3f79-4903-a150-1a8ed1c81dbb_Asus01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-5\\c4e653b9-3f79-4903-a150-1a8ed1c81dbb_Asus01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-5\\f6f60fb8-3ea0-4cd9-86ac-214a8212fa43_Asus02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-5\\f6f60fb8-3ea0-4cd9-86ac-214a8212fa43_Asus02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-66\\ad2aaa92-1578-4ca2-8108-ed089d66d06a_Screenshot (33).png",
+      "PackagePath": "staticwebassets\\images\\products\\product-66\\ad2aaa92-1578-4ca2-8108-ed089d66d06a_Screenshot (33).png"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-67\\65c8dbd2-52b3-4203-baf3-6b826dacda06_shoes.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-67\\65c8dbd2-52b3-4203-baf3-6b826dacda06_shoes.png"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-67\\f8c6a95e-438c-4f25-a326-d1763837ba7a_shoee.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-67\\f8c6a95e-438c-4f25-a326-d1763837ba7a_shoee.png"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-6\\0284ab08-0c81-4ad3-b17f-c7ea95a7920e_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-6\\0284ab08-0c81-4ad3-b17f-c7ea95a7920e_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-6\\20a1e590-dd5b-4491-816e-77b2df41fbdf_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-6\\20a1e590-dd5b-4491-816e-77b2df41fbdf_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-6\\33cc9e55-9323-4e2d-b6c8-2a2d82718408_sams01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-6\\33cc9e55-9323-4e2d-b6c8-2a2d82718408_sams01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-6\\3b83f53d-0ad0-4934-81eb-c4239008c697_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-6\\3b83f53d-0ad0-4934-81eb-c4239008c697_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-6\\57a81721-f054-4d5f-b4d2-8b94fa420924_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-6\\57a81721-f054-4d5f-b4d2-8b94fa420924_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-6\\5bb5ac0d-be03-493d-ae53-8cc6dde227ff_samsung01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-6\\5bb5ac0d-be03-493d-ae53-8cc6dde227ff_samsung01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-6\\76d5629d-1e70-4eac-b252-52db93f6b565_samsung04.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-6\\76d5629d-1e70-4eac-b252-52db93f6b565_samsung04.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-6\\997dc06d-dcc2-485f-ade9-f4b3dbc4f4e2_samsung02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-6\\997dc06d-dcc2-485f-ade9-f4b3dbc4f4e2_samsung02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-6\\b5d74de1-28f2-4253-9ab2-bc9a473befc6_samsung03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-6\\b5d74de1-28f2-4253-9ab2-bc9a473befc6_samsung03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-6\\e8945e9d-7339-4589-8410-c469332b2723_samsung01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-6\\e8945e9d-7339-4589-8410-c469332b2723_samsung01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-72\\06f9a1b1-35c9-4016-8744-bacf577e7992_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-72\\06f9a1b1-35c9-4016-8744-bacf577e7992_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-72\\0a5b8769-0e22-4cbf-825e-9da0991101e7_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-72\\0a5b8769-0e22-4cbf-825e-9da0991101e7_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-72\\4dd341ab-af08-42fd-a4b0-46df68bf2801_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-72\\4dd341ab-af08-42fd-a4b0-46df68bf2801_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-72\\6740f53b-524c-4f2c-9006-ace6d6c345fd_Apple03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-72\\6740f53b-524c-4f2c-9006-ace6d6c345fd_Apple03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-72\\a271c5f4-7c7a-46fa-9be0-e6b8bbdadc1e_Apple02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-72\\a271c5f4-7c7a-46fa-9be0-e6b8bbdadc1e_Apple02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-72\\eaca3642-90bb-4789-931d-48232502dd35_Apple01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-72\\eaca3642-90bb-4789-931d-48232502dd35_Apple01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-74\\2fc822fa-e220-4fb1-ba28-f8350bfd892f_Dell01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-74\\2fc822fa-e220-4fb1-ba28-f8350bfd892f_Dell01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-74\\5d99eb7a-e652-4d3e-abf0-0a6579941973_Dell02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-74\\5d99eb7a-e652-4d3e-abf0-0a6579941973_Dell02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-74\\c85334b5-82a0-442e-bd69-a24d600afd9a_Dell03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-74\\c85334b5-82a0-442e-bd69-a24d600afd9a_Dell03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-7\\032912f6-9e2b-4ec1-9096-8bc0ae1d3ea4_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-7\\032912f6-9e2b-4ec1-9096-8bc0ae1d3ea4_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-7\\29bd102a-4448-4e12-954b-1398be12b363_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-7\\29bd102a-4448-4e12-954b-1398be12b363_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-7\\2cd0c54d-4588-4ac1-abc0-b5d47b5bcc2e_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-7\\2cd0c54d-4588-4ac1-abc0-b5d47b5bcc2e_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-7\\2fb5a698-a8af-49f1-833a-a9d43ee336bf_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-7\\2fb5a698-a8af-49f1-833a-a9d43ee336bf_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-7\\474e781f-9bc5-4e8a-a5d6-ea28ae5df776_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-7\\474e781f-9bc5-4e8a-a5d6-ea28ae5df776_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-7\\56c253e5-da3d-4450-bc5e-141f05f974bd_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-7\\56c253e5-da3d-4450-bc5e-141f05f974bd_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-7\\5e09f82f-6d45-42f7-82ab-30a03b7a3365_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-7\\5e09f82f-6d45-42f7-82ab-30a03b7a3365_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-7\\e1f10261-e938-4a75-93c3-0a8a13b5f187_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-7\\e1f10261-e938-4a75-93c3-0a8a13b5f187_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-8\\5a557439-ee26-427b-bf16-bcd03b8340c5_Dell01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-8\\5a557439-ee26-427b-bf16-bcd03b8340c5_Dell01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-8\\64425e23-9f34-4e5e-b763-6d96c50ba73d_Dell03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-8\\64425e23-9f34-4e5e-b763-6d96c50ba73d_Dell03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-8\\b1154d31-b070-46a2-a1f8-d29e3ce8c256_DEll02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-8\\b1154d31-b070-46a2-a1f8-d29e3ce8c256_DEll02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-8\\b8fd5dcd-31dc-4b5b-97f9-26c370bda911_DEll02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-8\\b8fd5dcd-31dc-4b5b-97f9-26c370bda911_DEll02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-8\\bc90b67e-b0fc-4fb2-919c-9e434e92f7b9_Dell01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-8\\bc90b67e-b0fc-4fb2-919c-9e434e92f7b9_Dell01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-8\\d1498cdc-b762-49b3-a091-5e9323e1d37e_Dell03.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-8\\d1498cdc-b762-49b3-a091-5e9323e1d37e_Dell03.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-8\\d201f993-38f5-4e4b-bf08-b96e8997faef_DEll02.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-8\\d201f993-38f5-4e4b-bf08-b96e8997faef_DEll02.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-8\\d22adf1f-e106-47e5-ba5e-eab66f367bf0_Dell01.webp",
+      "PackagePath": "staticwebassets\\images\\products\\product-8\\d22adf1f-e106-47e5-ba5e-eab66f367bf0_Dell01.webp"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-9\\108d258c-df1d-432b-91c3-4f567320d845_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-9\\108d258c-df1d-432b-91c3-4f567320d845_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-9\\2873f0d2-3c1b-4fd6-a429-edcc5fddbc61_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-9\\2873f0d2-3c1b-4fd6-a429-edcc5fddbc61_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-9\\2b24d1e1-7e28-4b26-9304-ab0fc664f7e1_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-9\\2b24d1e1-7e28-4b26-9304-ab0fc664f7e1_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-9\\4e625367-eb30-40e6-bf8d-34aa544c1973_Microsoft01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-9\\4e625367-eb30-40e6-bf8d-34aa544c1973_Microsoft01.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-9\\646175ae-5217-41bf-817e-ccacfac4b5f3_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-9\\646175ae-5217-41bf-817e-ccacfac4b5f3_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-9\\87f53be5-eeed-4b64-8040-bdb534fdc6c0_Microsoft03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-9\\87f53be5-eeed-4b64-8040-bdb534fdc6c0_Microsoft03.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-9\\a3b75479-1115-403b-92da-ce06e7e23f49_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-9\\a3b75479-1115-403b-92da-ce06e7e23f49_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\images\\products\\product-9\\b11bd1f6-2db6-4124-8a4f-3ba79e421de9_Microsoft02.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-9\\b11bd1f6-2db6-4124-8a4f-3ba79e421de9_Microsoft02.jpg"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap-icons\\font\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\bootstrap-icons.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap-icons\\font\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\bootstrap-icons.json"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap-icons\\font\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Kareem\\Web Development\\Eraasoft\\Graduation Project\\Github Project\\E-Commerce-GP\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.E-Commerce_GP.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.E-Commerce_GP.props",
+      "PackagePath": "build\\E-Commerce_GP.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.E-Commerce_GP.props",
+      "PackagePath": "buildMultiTargeting\\E-Commerce_GP.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.E-Commerce_GP.props",
+      "PackagePath": "buildTransitive\\E-Commerce_GP.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

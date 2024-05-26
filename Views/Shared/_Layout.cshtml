@@ -1,0 +1,140 @@
+﻿@using Microsoft.AspNetCore.Identity 
+@using E_Commerce_GP.Models 
+@using E_Commerce_GP.IRepository 
+@using System.Security.Claims;
+@inject IShoppingCartRepository shoppingCartRepository
+@inject IWishlistRepository wishlistRepository
+@{
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    var userShoppingCart = shoppingCartRepository.GetUserShoppingCart(userId);
+    int cartItemCount = 0; 
+    var userWishlist = wishlistRepository.GetWishlist(userId);
+    int wishlistItemCount = 0;
+    if(userShoppingCart != null)
+    {
+        cartItemCount = userShoppingCart.CartItems.Count; 
+    }
+    if (userWishlist != null)
+    {
+        wishlistItemCount = userWishlist.Products.Count;
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - E_Commerce_GP</title>
+    <link rel="icon" href="/icons/5571495.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/E_Commerce_GP.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header  >
+       @*  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">E_Commerce_GP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+         </nav> *@
+        <nav class="navbar navbar-expand-lg bg-primary ps-3 pb-3 pt-3 mb-4" data-bs-theme="dark">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarColor01  ">
+                    <a class="navbar-brand " asp-controller="Product" asp-action="Index">LapZone</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <form class="d-flex" asp-controller="Search" asp-action="Index"  >
+                        <input class="form-control" style="width: 400px;" name="search" type="search" placeholder="Search">
+                        <button class="btn btn-secondary " type="submit"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+                    </form>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarColor01 ">
+                    <ul class="navbar-nav ms-auto">
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item dropdown mx-1 ">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Admin</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/product/index">Products</a>
+                                    <a class="dropdown-item" href="/discount/index">Discounts</a>
+                                    <a class="dropdown-item" href="/users/index">Users</a>
+                                    <a class="dropdown-item" href="/order/orderspanel">Orders</a>
+                                    <a class="dropdown-item" href="/contactus/index">Contact Us</a>
+                                </div>
+                            </li>
+                        }
+
+                        <li class="nav-item mx-1 ">
+                            <a class="nav-link active" asp-controller="Home" asp-action="Index">
+                                Products
+                            </a>
+                        </li>
+                        <li class="nav-item mx-1 ">
+                            <a class="nav-link" asp-controller="Brand" asp-action="ShowBrands"> Brands </a>
+                        </li>
+                        <li class="nav-item mx-1 ">
+                            <a class="nav-link" href="/contactus/create">Contact US</a>
+                        
+                        <li class="nav-item mx-0">
+                            <a class="nav-link" href="/Cart/Index"><i class="fa-solid fa-cart-shopping" style="color:limegreen;"></i><small>(<span>@cartItemCount</span>)</small></a>
+                        </li>
+
+                        <li class="nav-item mx-0 ">
+                            <a class="nav-link" href="/wishlist/index"><i class="fa-solid fa-heart" style="color:red;"></i><small>(<span>@wishlistItemCount</span>)</small></a>
+                        </li>
+                        </li>
+                        <li class="nav-item mx-1 ">
+                            <a class="nav-link" href="/Order/Index">My Orders</a>
+                        </li>
+                            <partial name="_LoginPartial" />
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" ">
+            @RenderBody()
+        </main>
+    </div>
+
+   @*  <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - E_Commerce_GP - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer> *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+     <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        
+    </script>
+
+</body>
+</html>

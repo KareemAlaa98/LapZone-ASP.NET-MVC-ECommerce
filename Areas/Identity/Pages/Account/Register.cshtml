@@ -1,0 +1,330 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+    <div class="row">
+        <fieldset class="col-md-6">
+            <legend>Personal Information</legend>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Input.FirstName" class="form-label" for="firstName">First Name</label>
+                    <input asp-for="Input.FirstName" autocomplete="firstname" aria-required="true" maxlength="100" class="form-control" id="firstName" placeholder="John">
+                    <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="Input.LastName" class="form-label" for="lastName">Last Name</label>
+                    <input asp-for="Input.LastName" autocomplete="lastname" aria-required="true" maxlength="100" class="form-control" id="lastName" placeholder="Doe">
+                    <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Input.UserName" class="form-label" for="userName">UserName</label>
+                    <input asp-for="Input.UserName" autocomplete="username" aria-required="true" maxlength="50" class="form-control" id="userName" placeholder="username">
+                    <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="Input.PhoneNumber" class="form-label" for="phone">Phone Number</label>
+                    <input asp-for="Input.PhoneNumber" autocomplete="phone" aria-required="true" maxlength="11" class="form-control" id="phone" placeholder="01234567891">
+                    <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Input.Email" class="form-label" for="emai">Email</label>
+                    <input asp-for="Input.Email" autocomplete="email" aria-required="true" class="form-control" id="email" placeholder="email@example.com">
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Input.Password" class="form-label" for="pass">Password</label>
+                    <input asp-for="Input.Password" aria-required="true" class="form-control" id="pass" placeholder="password" autocomplete="off">
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="Input.ConfirmPassword" class="form-label" for="confirmpass">Confirm Password</label>
+                    <input asp-for="Input.ConfirmPassword" aria-required="true" class="form-control" id="confirmpass" placeholder="confirm password" autocomplete="off" required>
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+
+
+        </fieldset>
+        <fieldset class="col-md-6">
+            <legend>Address</legend>
+            <div class="mb-3">
+                <label asp-for="Input.Street" class="form-label" for="street">Street Details</label>
+                <textarea asp-for="Input.Street" aria-required="true" class="form-control" id="street" placeholder="street address in details"></textarea>
+                <span asp-validation-for="Input.Street" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Input.City" class="form-label" for="city">City</label>
+                <input asp-for="Input.City" aria-required="true" class="form-control" id="city" placeholder="city">
+                <span asp-validation-for="Input.City" class="text-danger"></span>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Input.Building_Number" class="form-label" for="building">Building Number</label>
+                    <input asp-for="Input.Building_Number" aria-required="true" class="form-control" id="building" placeholder="building number">
+                    <span asp-validation-for="Input.Building_Number" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="Input.Floor_Number" class="form-label" for="floor">Floor Number</label>
+                    <input asp-for="Input.Floor_Number" aria-required="true" class="form-control" id="floor" placeholder="floor number">
+                    <span asp-validation-for="Input.Floor_Number" class="text-danger"></span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+    </div>
+</form>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+@* <div class="row">
+    <div class="col-md-4">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <h2>Create a new account.</h2>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.FirstName" class="form-control" autocomplete="firstname" aria-required="true" maxlength="100" />
+                <label asp-for="Input.FirstName">First Name</label>
+                <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.LastName" class="form-control" autocomplete="lastname" aria-required="true" maxlength="100"/>
+                <label asp-for="Input.LastName">Last Name</label>
+                <span asp-validation-for="Input.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Email" class="form-control" autocomplete="email" aria-required="true" placeholder="name@example.com" />
+                <label asp-for="Input.Email">Email</label>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.UserName" class="form-control" autocomplete="username" aria-required="true" maxlength="100" />
+                <label asp-for="Input.UserName">User Name</label>
+                <span asp-validation-for="Input.UserName" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.Password">Password</label>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.PhoneNumber" class="form-control" maxlength="11" autocomplete="" aria-required="true" placeholder="PhoneNUmber"  />
+                <label asp-for="Input.PhoneNumber">Phone Number</label>
+                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-floating mb-3">
+            <input asp-for="Input.City" class="form-control" autocomplete="" aria-required="true" placeholder="City" maxlength="100" />
+            <label asp-for="Input.City">City</label>
+            <span asp-validation-for="Input.City" class="text-danger"></span>
+        </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Street" class="form-control" autocomplete="" aria-required="true" placeholder="Street" maxlength="100" />
+                <label asp-for="Input.Street">Street</label>
+                <span asp-validation-for="Input.Street" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Building_Number" class="form-control" autocomplete="" aria-required="true" placeholder="Building Number" />
+                <label asp-for="Input.Building_Number">Building Number</label>
+                <span asp-validation-for="Input.Building_Number" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Floor_Number" class="form-control" autocomplete="" aria-required="true" placeholder="Floor Number" />
+                <label asp-for="Input.Floor_Number">Floor Number</label>
+                <span asp-validation-for="Input.Floor_Number" class="text-danger"></span>
+            </div>
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+        </form>
+    </div>
+    <div class="col-md-6 col-md-offset-2">
+        <section>
+            <h3>Use another service to register.</h3>
+            <hr />
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
+                            about setting up this ASP.NET application to support logging in via external services</a>.
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                        <div>
+                            <p>
+                                @foreach (var provider in Model.ExternalLogins!)
+                                {
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+                }
+            }
+        </section>
+    </div>
+</div> *@
+
+
+@* <section class="h-100 h-custom gradient-custom-2 ">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center ">
+            <div class="col-12">
+                <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+
+                <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                    <div class="card-body p-0">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <h3 class="fw-normal mb-5" style="color: #4835d4;">Personal Infomation</h3>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4 pb-2">
+
+                                            <div data-mdb-input-init class="form-outline">
+                                                <label asp-for="Input.FirstName"  class="form-label" for="form3Examplev2">First Name</label>
+                                                <input asp-for="Input.FirstName" placeholder="first name" autocomplete="firstname" aria-required="true" maxlength="100" id="form3Examplev2" class="form-control form-control-lg" />
+                                                <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6 mb-4 pb-2">
+
+                                            <div data-mdb-input-init class="form-outline">
+                                                <label asp-for="Input.LastName" class="form-label" for="form3Examplev3">Last Name</label>
+                                                <input id="form3Examplev3" placeholder="last name" class="form-control form-control-lg" asp-for="Input.LastName" autocomplete="lastname" aria-required="true" maxlength="100" />
+                                                <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4 pb-2">
+
+                                            <div data-mdb-input-init class="form-outline form-white">
+                                                    <label asp-for="Input.UserName" class="form-label" for="form3Examplea7">UserName</label>
+                                                    <input id="form3Examplea7" class="form-control form-control-lg" asp-for="Input.UserName" autocomplete="username" aria-required="true" maxlength="100" placeholder="username" />
+                                                    <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6 mb-4 pb-2">
+                                                <div data-mdb-input-init class="form-outline">
+                                                    <label asp-for="Input.PhoneNumber" class="form-label" for="form3Exampleph">Phone Number</label>
+                                                    <input asp-for="Input.PhoneNumber" maxlength="11" autocomplete="" aria-required="true" placeholder="phone number" id="form3Exampleph" class="form-control form-control-lg" />
+                                                    <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                                                </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div data-mdb-input-init class="form-outline form-white">
+                                                <label asp-for="Input.Email" class="form-label" for="form3Examplea9"> Email</label>
+                                                <input asp-for="Input.Email" autocomplete="email" aria-required="true" placeholder="name@example.com" id="form3Examplea9" class="form-control form-control-lg" />
+                                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4 pb-2">
+                                            <div data-mdb-input-init class="form-outline">
+                                                <label asp-for="Input.Password"  class="form-label" for="form3Examplep">Password</label>
+                                                <input asp-for="Input.Password" maxlength="11" autocomplete="" aria-required="true" placeholder="password"  id="form3Examplep" class="form-control form-control-lg" />
+                                                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4 pb-2">
+
+                                                <div data-mdb-input-init class="form-outline">
+                                                    <label asp-for="Input.ConfirmPassword"  class="form-label" for="form3Examplep2">Confirm Password</label>
+                                                    <input asp-for="Input.ConfirmPassword" maxlength="11" autocomplete="" aria-required="true" placeholder="confirm password" id="form3Examplep2" class="form-control form-control-lg" required />
+                                                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @*###########################################################################################################
+                            <div class="col-lg-6 bg-indigo text-white">
+                                <div class="p-5">
+                                    <h3 class="fw-normal mb-5">Address</h3>
+
+                                    <div class="mb-4 pb-2">
+                                        <div data-mdb-input-init class="form-outline form-white">
+                                             <label asp-for="Input.Street" class="form-label" for="form3Examplea2">Street Details</label>
+                                             <input asp-for="Input.Street" class="form-control" autocomplete="" aria-required="true" placeholder="street address in details" maxlength="100" id="form3Examplea2" class="form-control form-control-lg" />
+                                             <span asp-validation-for="Input.Street" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4 pb-2">
+                                        <div data-mdb-input-init class="form-outline form-white">
+                                            <label asp-for="Input.City"  class="form-label" for="form3Examplea3">City</label>
+                                            <input asp-for="Input.City" autocomplete="" aria-required="true" placeholder="city" maxlength="100" id="form3Examplea3" class="form-control form-control-lg" />
+                                            <span asp-validation-for="Input.City" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4 pb-2">
+
+                                                <div data-mdb-input-init class="form-outline form-white">
+                                                    <label asp-for="Input.Building_Number" class="form-label" for="form3Examplebn">Building Number</label>
+                                                    <input asp-for="Input.Building_Number" autocomplete="" aria-required="true" placeholder="building number" maxlength="100" id="form3Examplebn" class="form-control form-control-lg" />
+                                                    <span asp-validation-for="Input.Building_Number" class="text-danger"></span>
+                                                </div>
+
+                                        </div>
+                                        <div class="col-md-6 mb-4 pb-2">
+
+                                                <div data-mdb-input-init class="form-outline form-white">
+                                                    <label asp-for="Input.Floor_Number" class="form-label" for="form3Examplefn">Floor Number</label>
+                                                    <input asp-for="Input.Floor_Number" autocomplete="" aria-required="true" placeholder="floor number" maxlength="100" id="form3Examplefn" class="form-control form-control-lg" />
+                                                    <span asp-validation-for="Input.Floor_Number" class="text-danger"></span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-lg"
+                                            data-mdb-ripple-color="dark">
+                                        Register
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                </form>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ *@
+
