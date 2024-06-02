@@ -16,13 +16,45 @@ namespace E_Commerce_GP.Repository
             this.context = _context;
         }
 
+        public List<Brand> GetDeletedBrands()
+        {
+            return context.Brands
+                .Where(e => e.IsDeleted)
+                .ToList();
+        }
+        
+        public List<Product> GetProductsOfDeletedBrands(int id)
+        {
+            return context.Products.Where(e => e.BrandId == id).ToList();
+        }
+
         //Delete
         public void Delete(int id)
         {
             var brand = ReadByIdBrand(id);
             if (brand != null)
             {
-                context.Brands.Remove(brand);
+                brand.IsDeleted = true;
+                foreach(var product in brand.Products)
+                {
+                    product.IsDeleted = true;
+                    context.SaveChanges();
+                }
+                context.SaveChanges();
+            }
+        }
+
+        public void Restore(int id)
+        {
+            var brand = ReadByIdBrand(id);
+            if (brand != null)
+            {
+                brand.IsDeleted = false;
+                foreach (var product in brand.Products)
+                {
+                    product.IsDeleted = false;
+                    context.SaveChanges();
+                }
                 context.SaveChanges();
             }
         }
@@ -41,7 +73,9 @@ namespace E_Commerce_GP.Repository
         //Read
         public List<Brand> ReadAllBrand()
         {
-            return context.Brands.ToList();
+            return context.Brands
+                .Where(e => !e.IsDeleted)
+                .ToList();
         }
 
         public Brand ReadByIdBrand(int id)

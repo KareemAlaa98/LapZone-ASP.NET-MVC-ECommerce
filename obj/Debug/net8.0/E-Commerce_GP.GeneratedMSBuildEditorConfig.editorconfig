@@ -202,6 +202,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcU2hvd0JyYW5kcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Kareem/Web Development/Eraasoft/Graduation Project/Github Project/E-Commerce-GP/Views/Brand/ShowDeleted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcU2hvd0RlbGV0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Kareem/Web Development/Eraasoft/Graduation Project/Github Project/E-Commerce-GP/Views/Brand/_CreateEditPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcX0NyZWF0ZUVkaXRQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -292,6 +296,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Kareem/Web Development/Eraasoft/Graduation Project/Github Project/E-Commerce-GP/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Kareem/Web Development/Eraasoft/Graduation Project/Github Project/E-Commerce-GP/Views/Product/ShowDeleted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTaG93RGVsZXRlZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Kareem/Web Development/Eraasoft/Graduation Project/Github Project/E-Commerce-GP/Views/Product/Update.cshtml]

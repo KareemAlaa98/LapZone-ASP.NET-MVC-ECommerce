@@ -8,29 +8,52 @@ namespace E_Commerce_GP.Repository
     public class WishlistRepository : IWishlistRepository
     {
         private readonly ApplicationDbContext _context;
+        IProductRepository productRepository;
 
-        public WishlistRepository(ApplicationDbContext context)
+        public WishlistRepository(ApplicationDbContext context, IProductRepository _productRepository)
         {
             _context = context;
+            this.productRepository = _productRepository;
         }
 
         public Wishlist GetWishlist(string userId)
         {
-            return _context.Wishlists
+            // If No User is Signed in (this check is for the code logic of loading the wishlist at the top of _layout page
+            if (userId == null)
+            {
+                return null;
+            }
+
+            var userWishlist = _context.Wishlists
                 .Include(w => w.Products)
                     .ThenInclude(e=>e.ProductImages)
                 .Include(w => w.Products)
                     .ThenInclude(e => e.Discount)
-                .FirstOrDefault(w => w.ApplicationUserId == userId);
+                .Where(w => w.ApplicationUserId == userId)
+                .FirstOrDefault();
+
+            if(userWishlist == null)
+            {
+                userWishlist = new Wishlist
+                {
+                    ApplicationUserId = userId,
+                    Products = new List<Product>()
+                };
+                _context.Wishlists.Add(userWishlist);
+                _context.SaveChanges();
+            }
+            else
+            {
+                // Filter out deleted products after loading the wishlist
+                userWishlist.Products = userWishlist.Products.Where(p => !p.IsDeleted).ToList();
+            }
+
+            return userWishlist; 
         }
 
         public void AddProduct(string userId, int productId)
         {
-            if (string.IsNullOrEmpty(userId))
-            {
-                throw new ArgumentNullException(nameof(userId), "User ID cannot be null or empty.");
-            }
-
+            var product = productRepository.ReadById(productId);
             var wishlist = GetWishlist(userId);
             if (wishlist == null)
             {
@@ -40,9 +63,9 @@ namespace E_Commerce_GP.Repository
                     Products = new List<Product>()
                 };
                 _context.Wishlists.Add(wishlist);
+                _context.SaveChanges();
             }
 
-            var product = _context.Products.Find(productId);
             wishlist.Products.Add(product);
             _context.SaveChanges();
         }

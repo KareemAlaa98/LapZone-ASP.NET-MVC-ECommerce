@@ -20,5 +20,9 @@ namespace E_Commerce_GP.IRepository
 
         List<Product> GetProductsInBrand(int id);
 
+        List<Brand> GetDeletedBrands();
+        void Restore(int id);
+
+        List<Product> GetProductsOfDeletedBrands(int id);
     }
 }

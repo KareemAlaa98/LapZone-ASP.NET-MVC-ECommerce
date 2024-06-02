@@ -1,6 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Search";
+    var listOfBrands = ViewData["listOfBrands"] as List<Brand>;
+    var search = ViewData["searchInput"] as string;
 }
+
 @if (Model.Count > 0)
 {
     <div class="container">
@@ -9,6 +12,7 @@
             <partial name="_FilterFormPartial"></partial>
         </div>
         <div class="col-10">
+            <h3 class="text-center mb-0">Search Results for "@search"</h3>
             <partial name="_DisplayProductsPartialcshtml"></partial>
         </div>
     </div>
@@ -17,7 +21,7 @@
 else
 {
     <div class="alert alert-danger mt-5" role="alert">
-        <h4 class="alert-heading">No Results Found!</h4>
+        <h4 class="alert-heading">No Results Found for "@search"! </h4>
         <p>We couldn't find a matching result to your search. Please try again with a different keyword or refine your search criteria.</p>
         <hr>
         <p>If you still couldn't find what you're searching for, try checking similar products from our collection.</p>

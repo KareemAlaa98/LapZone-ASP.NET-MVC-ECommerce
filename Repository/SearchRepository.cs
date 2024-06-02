@@ -15,7 +15,10 @@ namespace E_Commerce_GP.Repository
 
         public List<Product> SearchProducts(string search)
         {
-            var searchResults = context.Products.Include(e => e.Brands).Include(e => e.Discount).Include(e => e.ProductImages).Where(e => e.Name.Contains(search)).ToList();
+            var searchResults = context.Products.Include(e => e.Brands).Include(e => e.Discount).Include(e => e.ProductImages)
+                .Where(e => !e.IsDeleted)
+                .Where(e => e.Name.Contains(search))
+                .ToList();
             return searchResults;
         }
     }

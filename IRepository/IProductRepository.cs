@@ -18,11 +18,13 @@ namespace E_Commerce_GP.IRepository
 
         //Create
         Product Create(ProductViewModel productVM);
-        Product GetProductByName(string name);
 
 
         //Filter
         List<Product> Filter(string? brandName = null, decimal? minPrice = null, decimal? maxPrice = null, int? rating = null);
+
+        List<Product> GetDeletedProducts();
+        public void Restore(int id);
         decimal RecalculateAverageRating(int productId);
 
     }

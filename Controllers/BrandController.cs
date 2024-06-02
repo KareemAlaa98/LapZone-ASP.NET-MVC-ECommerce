@@ -10,18 +10,28 @@ namespace E_Commerce_GP.Controllers
 {
     public class BrandController : Controller
     {
-        IBrandRepository BrandRepository;
+        IBrandRepository brandRepository;
         public BrandController(IBrandRepository brandIRepository)
         {
-            this.BrandRepository = brandIRepository;
+            this.brandRepository = brandIRepository;
         }
 
         [AllowAnonymous]
         public IActionResult ShowBrands()
         {
-            var brands = BrandRepository.ReadAllBrand();
-
+            var brands = brandRepository.ReadAllBrand();
+            ViewData["actionUrl"] = "ShowBrands";
             return View("ShowBrands", brands);
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public IActionResult ShowDeleted()
+        {
+            ViewData["actionUrl"] = "ShowDeleted";
+            var deletedBrands = brandRepository.GetDeletedBrands();
+            ViewData["listOfBrands"] = brandRepository.ReadAllBrand();
+            return View(deletedBrands);
         }
 
 
@@ -39,7 +49,7 @@ namespace E_Commerce_GP.Controllers
         {
             if (ModelState.IsValid)
             {
-                BrandRepository.CreateBrand(newbrand);
+                brandRepository.CreateBrand(newbrand);
                 return RedirectToAction("ShowBrands");
             }
             return View("Create", newbrand);
@@ -50,7 +60,7 @@ namespace E_Commerce_GP.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var brand = BrandRepository.ReadByIdBrand(id);
+            var brand = brandRepository.ReadByIdBrand(id);
             if (brand == null)
             {
                 return RedirectToAction("ShowBrands");
@@ -70,7 +80,7 @@ namespace E_Commerce_GP.Controllers
         {
             if (ModelState.IsValid)
             {
-                BrandRepository.UpdateBrand(brandVM);
+                brandRepository.UpdateBrand(brandVM);
                 return RedirectToAction("ShowBrands");
             }
             return View("Edit", brandVM);
@@ -81,11 +91,19 @@ namespace E_Commerce_GP.Controllers
         [HttpGet]
         public IActionResult Details(int id)
         {
-            var brandProducts = BrandRepository.GetProductsInBrand(id);
+            var brandProducts = brandRepository.GetProductsInBrand(id);
             if (brandProducts == null)
             {
                 return View("NotFound");
             }
+            var brand = brandRepository.ReadByIdBrand(id);
+            if (brand.IsDeleted)
+            {
+                ViewData["brandStatus"] = "deleted";
+            }
+            else { ViewData["brandStatus"] = "exists"; }
+
+            ViewData["listOfBrands"] = brandRepository.ReadAllBrand();
             return View(brandProducts);
         }
 
@@ -93,8 +111,16 @@ namespace E_Commerce_GP.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
-            BrandRepository.Delete(id);
+            brandRepository.Delete(id);
             return RedirectToAction("ShowBrands");
+        }
+
+        
+        [Authorize(Roles = "Admin")]
+        public IActionResult Restore(int id)
+        {
+           brandRepository.Restore(id);
+           return RedirectToAction("ShowBrands"); 
         }
 
 

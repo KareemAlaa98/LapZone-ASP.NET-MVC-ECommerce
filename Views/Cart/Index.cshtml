@@ -44,29 +44,29 @@ else
                                         <div>
                                             @if (item.Quantity == 1)
                                             {
-                                                <a class="btn btn-sm btn-dark" disabled>-</a>
+                                                <a class="btn btn-sm btn-dark rounded fw-bold" disabled>-</a>
                                             }
                                             else
                                             {
-                                                <a class="btn btn-sm btn-danger" href="/cart/DecreaseQuantity/@item.Id">-</a>
+                                                <a class="btn btn-sm btn-danger rounded fw-bold" href="/cart/DecreaseQuantity/@item.Id">-</a>
                                             }
 
                                             @if (item.Quantity == 10 || item.Quantity >= item.Product.QuantityInStock)
                                             {
                                                 if (item.Quantity >= item.Product.QuantityInStock)
                                                 {
-                                                    <a class="btn btn-sm btn-dark" disabled>+</a> 
+                                                    <a class="btn btn-sm btn-dark rounded fw-bold" disabled>+</a> 
                                                     <div class="text-danger"> <small>stock isn't enough</small></div>
                                                 }
                                                 else
                                                 {
-                                                    <a class="btn btn-sm btn-dark" disabled>+</a>
-                                                    <div class="text-danger"> <small>maximum allowed quantity</small></div>
+                                                    <a class="btn btn-sm btn-dark fw-bold" disabled>+</a>
+                                                    <div class="text-danger rounded rounded"> <small>maximum allowed quantity</small></div>
                                                 }
                                             }
                                             else
                                             {
-                                                <a class="btn btn-sm btn-success" href="/cart/increaseQuantity/@item.Id">+</a>
+                                                <a class="btn btn-sm btn-success rounded" href="/cart/increaseQuantity/@item.Id">+</a>
                                             }
                                         </div>
 
@@ -85,7 +85,7 @@ else
                                         {
                                             newPrice = item.Product.Price;
                                             <p>
-                                                Price: @newPrice <small>EGP</small>
+                                                @newPrice <small>EGP</small>
                                             </p>
                                         }
                                     </div>
@@ -96,27 +96,26 @@ else
                                     </div>
                                 </td>
                                 <td class="col-sm-1 col-md-1">
-                                    <a href="/cart/removefromcart/@item.Id" class="btn btn-outline-danger">
+                                    <a href="/cart/removefromcart/@item.Id" class="btn btn-outline-danger rounded">
                                         <span class="glyphicon glyphicon-remove"></span> Remove
                                     </a>
                                 </td>
                             </tr>
                         }
                         <tr>
-                            <td><button class="btn btn-danger">SubTotal</button></td>
+                            <td><button class="btn btn-danger rounded">SubTotal</button></td>
                             <td class="text-right"><h4><strong>@Model.Total</strong><small>EGP</small></h4></td>
                         </tr>
 
                         <tr>
                             <td>
-                                <a href="/Product/Index" class="btn btn-outline-primary">
-                                    <i class="bi bi-cart-plus"></i>
+                                <a href="/Product/Index" class="btn btn-outline-primary rounded">
                                     Continue Shopping
                                 </a>
                             </td>
 
                             <td>
-                                <a href="/Cart/Checkout" class="btn btn-success">
+                                <a href="/Cart/Checkout" class="btn btn-success rounded">
                                     Checkout <span class="glyphicon glyphicon-play"></span>
                                 </a>
                             </td>

@@ -17,7 +17,12 @@ namespace E_Commerce_GP.Repository
 
         public ShoppingCart GetUserShoppingCart(string userId)
         {
-            return context.ShoppingCarts
+            // If No User is Signed in(this check is for the code logic of loading the cart at the top of _layout page
+            if (userId == null)
+            {
+                return null;
+            }
+            var userCart = context.ShoppingCarts
                               .Include(e => e.ApplicationUser)
                               .Include(e => e.CartItems)
                                 .ThenInclude(e => e.Product)
@@ -26,14 +31,37 @@ namespace E_Commerce_GP.Repository
                                 .ThenInclude(e => e.Product)
                                   .ThenInclude(p => p.Discount)
                               .FirstOrDefault(e => e.ApplicationUserId == userId);
+            if(userCart == null)
+            {
+                userCart = new ShoppingCart()
+                {
+                    ApplicationUserId = userId,
+                    Total = 0,
+                    CartItems = new List<CartItem>()
+                };
+                context.ShoppingCarts.Add(userCart);
+                context.SaveChanges();
+            }
+            return userCart;
         }
 
         public void AddProductToCart(string userId, int productId) 
         {
             var product = productRepository.ReadById(productId);
             var userShoppingCart = GetUserShoppingCart(userId);
+            if (userShoppingCart == null)
+            {
+                userShoppingCart = new ShoppingCart()
+                {
+                    ApplicationUserId = userId,
+                    Total = 0,
+                    CartItems = new List<CartItem>()
+                };
+                context.ShoppingCarts.Add(userShoppingCart);
+                context.SaveChanges();
+            }
 
-            foreach(var item in userShoppingCart.CartItems)
+            foreach (var item in userShoppingCart.CartItems)
             {
                 if(item.ProductId == productId)
                 {

@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Deleted Products";
+    var listOfBrands = ViewData["listOfBrands"] as List<Brand>;
+    string errorMessage = TempData["ErrorMessage"] as string;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <partial name="_FilterFormPartial"></partial>
+        </div>
+        <div class="col-10">
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div id="message" class="alert alert-danger alert-dismissible fade show" role="alert">
+                    @errorMessage
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            <partial name="_DisplayProductsPartialcshtml"></partial>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Auto-hide the message after 7 seconds
+    setTimeout(function () {
+        var messageElement = document.getElementById("message");
+        if (messageElement) {
+            // Trigger the fade out by removing the "show" class
+            messageElement.classList.remove("show");
+
+            // Wait for the fade out transition to complete before removing the element
+            setTimeout(function() {
+                messageElement.remove();
+            }, 150); // Bootstrap's fade transition duration is 150ms
+        }
+    }, 7000);
+</script>

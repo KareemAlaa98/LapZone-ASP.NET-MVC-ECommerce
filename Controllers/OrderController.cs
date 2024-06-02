@@ -81,7 +81,7 @@ namespace E_Commerce_GP.Controllers
             return View(orders);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         public IActionResult Details(int id)
         {
             var order = orderRepository.GetOrderById(id);

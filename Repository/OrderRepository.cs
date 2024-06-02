@@ -40,7 +40,13 @@ namespace E_Commerce_GP.Repository
 
         public Order GetOrderById(int id)
         {
-            return context.Orders.Include(e => e.ApplicationUser).Include(e => e.OrderItems).ThenInclude(e => e.Product).ThenInclude(e => e.Discount).Where(e => e.Id == id).FirstOrDefault();
+            return context.Orders
+                .Include(e => e.ApplicationUser)
+                .Include(e => e.OrderItems)
+                    .ThenInclude(e => e.Product).ThenInclude(e => e.Discount)
+                .Include(e => e.OrderItems)
+                    .ThenInclude(e => e.Product).ThenInclude(e => e.ProductImages)
+                .Where(e => e.Id == id).FirstOrDefault();
         }
         
         public List<Order> GetAllOrdersOfUser(string userId)

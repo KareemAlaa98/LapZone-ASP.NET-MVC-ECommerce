@@ -139,6 +139,9 @@ namespace E_Commerce_GP.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -425,6 +428,9 @@ namespace E_Commerce_GP.Data.Migrations
 
                     b.Property<int?>("DiscountId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("ModifiedAt")
                         .HasColumnType("datetime2");
@@ -799,7 +805,8 @@ namespace E_Commerce_GP.Data.Migrations
 
                     b.HasOne("E_Commerce_GP.Models.Discount", "Discount")
                         .WithMany()
-                        .HasForeignKey("DiscountId");
+                        .HasForeignKey("DiscountId")
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Brands");
 

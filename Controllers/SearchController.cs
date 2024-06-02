@@ -9,16 +9,20 @@ namespace E_Commerce_GP.Controllers
     public class SearchController : Controller
     {
         ISearchRepository searchRepository;
-        public SearchController(ISearchRepository _searchRepository)
+        IBrandRepository brandRepository;
+        public SearchController(ISearchRepository _searchRepository, IBrandRepository _brandRepository)
         {
             this.searchRepository = _searchRepository;
+            this.brandRepository = _brandRepository;
         }
 
-        [HttpPost]
+        [HttpGet]
         [AllowAnonymous]
         public IActionResult Index(string search)
         {
             var results = searchRepository.SearchProducts(search);
+            ViewData["listOfBrands"] = brandRepository.ReadAllBrand();
+            ViewData["searchInput"] = search;
             return View(results);
         }
     }

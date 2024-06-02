@@ -1187,3 +1187,4 @@ D:\Kareem\Web Development\Eraasoft\Graduation Project\Github Project\E-Commerce-
 D:\Kareem\Web Development\Eraasoft\Graduation Project\Github Project\E-Commerce-GP\obj\Debug\net8.0\E-Commerce_GP.pdb
 D:\Kareem\Web Development\Eraasoft\Graduation Project\Github Project\E-Commerce-GP\obj\Debug\net8.0\E-Commerce_GP.genruntimeconfig.cache
 D:\Kareem\Web Development\Eraasoft\Graduation Project\Github Project\E-Commerce-GP\obj\Debug\net8.0\ref\E-Commerce_GP.dll
+D:\Kareem\Web Development\Eraasoft\Graduation Project\Github Project\E-Commerce-GP\obj\Debug\net8.0\E-Commerce_GP.sourcelink.json

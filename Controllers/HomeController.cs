@@ -10,16 +10,19 @@ namespace E_Commerce_GP.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         IProductRepository productRepository;
+        IBrandRepository brandRepository;
 
-        public HomeController(ILogger<HomeController> logger, IProductRepository productRepository)
+        public HomeController(ILogger<HomeController> logger, IProductRepository productRepository, IBrandRepository _brandRepository)
         {
             _logger = logger;
             this.productRepository = productRepository;
+            this.brandRepository = _brandRepository;
         }
 
         public IActionResult Index()
         {
             var allProducts = productRepository.ReadAll();
+            ViewData["listOfBrands"] = brandRepository.ReadAllBrand();
             return View(allProducts);
         }
 

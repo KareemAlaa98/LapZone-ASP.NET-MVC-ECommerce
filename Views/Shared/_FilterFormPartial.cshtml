@@ -1,54 +1,24 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Products";
+
+    var brands = ViewData["listOfBrands"] as List<Brand>;
 }
 
-<form action="/product/Filter" method="post" class="bg-light">
+<form action="/product/Filter" method="get" class="bg-light">
     <fieldset>
         <legend class="bg-primary text-white p-2">Filters</legend>
-
         <!-- Brand filter -->
         <label class="bg-primary mx-2 fw-bold text-white p-2" for="brandName">Brand:</label>
         <br>
         <br>
-        <input type="radio" id="brand1" name="brandName" value="Dell" class="form-check-input mx-2">
-        <label for="brand1">Dell</label>
-        <br>
+        @foreach(var brand in brands)
+        {
+            <input type="radio" id="@brand.Name" name="brandName" value="@brand.Name" class="form-check-input mx-2">
+            <label for="@brand.Name">@brand.Name</label>
+            <br />
+        }
 
-        <input type="radio" id="brand2" name="brandName" value="Hp" class="form-check-input mx-2">
-        <label for="brand2">Hp</label>
-        <br>
-
-        <input type="radio" id="brand3" name="brandName" value="Apple" class="form-check-input mx-2">
-        <label for="brand3">Apple</label>
-        <br>
-
-        <input type="radio" id="brand4" name="brandName" value="Lenovo" class="form-check-input mx-2">
-        <label for="brand4">Lenovo</label>
-        <br>
-
-        <input type="radio" id="brand5" name="brandName" value="Asus" class="form-check-input mx-2">
-        <label for="brand5">Asus</label>
-        <br>
-
-        <input type="radio" id="brand6" name="brandName" value="Acer" class="form-check-input mx-2">
-        <label for="brand6">Acer</label>
-        <br>
-
-        <input type="radio" id="brand7" name="brandName" value="Microsoft" class="form-check-input mx-2">
-        <label for="brand7">Microsoft</label>
-        <br>
-
-        <input type="radio" id="brand8" name="brandName" value="Samsung" class="form-check-input mx-2">
-        <label for="brand8">Samsung</label>
-        <br>
-
-        <input type="radio" id="brand9" name="brandName" value="Razer" class="form-check-input mx-2">
-        <label for="brand9">Razer</label>
-        <br>
-
-        <input type="radio" id="brand10" name="brandName" value="MSI" class="form-check-input mx-2">
-        <label for="brand10">MSI</label>
-        <br>
         <br>
         <!-- Price filter -->
         <label class="bg-primary fw-bold text-white p-2 mx-2" for="brandName">Price:</label>
@@ -83,9 +53,8 @@
         <input type="radio" id="rating5" name="rating" value="5" class="form-check-input mx-2">
         <label class="text-warning" for="rating5"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </label>
         <br>
-        <!-- Your other radio inputs for rating filter -->
 
-        <button id="filterbtn" class="btn btn-sm btn-outline-primary p-2 mt-4" type="submit">Apply Filters</button>
+        <button id="filterbtn" class="btn btn-sm btn-primary mt-5 mb-4 rounded form-control p-2" type="submit">Apply Filters</button>
     </fieldset>
 </form>
 
@@ -93,7 +62,6 @@
     legend {
         border: 1px solid #007bff;
         border-radius: 0.25rem;
-        
     }
 </style>
 
@@ -116,8 +84,15 @@
             var minPrice = parseFloat(minPriceInput.value);
             var maxPrice = parseFloat(maxPriceInput.value);
 
+            // Check if min price and max price are not negative
+            if (minPrice < 0 || maxPrice < 0) {
+                // Display the error message
+                errorSpan.textContent = "Prices cannot be negative.";
+                // Disable the submit button
+                submitButton.disabled = true;
+            }
             // Check if min price is greater than or equal to max price
-            if (minPrice >= maxPrice) {
+            else if (minPrice >= maxPrice) {
                 // Display the error message
                 errorSpan.textContent = "Minimum price must be less than maximum price.";
                 // Disable the submit button
@@ -131,3 +106,4 @@
         }
     });
 </script>
+

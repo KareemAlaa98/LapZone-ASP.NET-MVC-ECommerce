@@ -2,46 +2,47 @@
 
 @{
     ViewData["Title"] = "Brand";
+    var actionName = ViewData["actionUrl"];
 }
-
-<style>
-    .custom-table {
-        background-color: white !important; 
-        font-size: 1.25rem; 
-    }
-
-        .custom-table th, .custom-table td {
-            color: black !important; 
-        }
-
-    .btn-xs {
-        padding: 0.25rem 0.5rem;
-        font-size: 0.50rem;
-        line-height: 1.1;
-    }
-</style>
 
 <div class="card shadow border-0 mt-4">
     <div class="card-header bg-primary bg-gradient ml-0 py-3">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="text-light py-2">Brands List</h2>
+                @if (actionName == "ShowDeleted")
+                {
+                    <h2 class="text-light py-2"> Deleted Brands List</h2>
+                }
+                else{<h2 class="text-light py-2">Brands List</h2>}
             </div>
         </div>
     </div>
     <div class="card-body p-4">
         <div class="row pb-3">
-            <div class="col-6">
-            </div>
+            <div class="col-6"></div>
             @if (User.IsInRole("Admin"))
             {
                 <div>
-                    <a asp-controller="Brand" asp-action="Create" class="btn btn-success">
+                    <a asp-controller="Brand" asp-action="Create" class="btn btn-success rounded">
                         <i class="bi bi-plus-circle"></i> Create New Brand
                     </a>
+                    @if(actionName == "ShowDeleted")
+                    {
+                        <a href="/brand/ShowBrands" class="btn btn-danger mx-2 rounded">
+                            Back to Brands
+                        </a>
+                    }else 
+                    {
+                        <a href="/brand/ShowDeleted" class="btn btn-danger mx-2 rounded">
+                            View Deleted Brands
+                        </a>
+                    }
                 </div>
             }
         </div>
+
+
+
         <table class="table table-bordered table-striped custom-table text-center">
             <thead>
                 <tr style="font-size:20px">
@@ -52,34 +53,91 @@
             <tbody>
                 @foreach (var obj in Model)
                 {
-
                     <tr>
                         <td scope="row">@obj.Name</td>
-                        
                         <td>
                             <div style="gap:4px" class="w-50 btn-group" role="group">
                                 @if (User.IsInRole("Admin"))
                                 {
-                                    <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@obj.Id">
-                                        <i class="bi bi-pencil-square"></i>
-                                        Edit
+                                    <a class="btn btn-primary btn-sm rounded" asp-action="Edit" asp-route-id="@obj.Id">
+                                        <i class="bi bi-pencil-square"></i> Edit
                                     </a>
-                                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@obj.Id">
-                                        <i class="bi bi-trash"></i>
-                                        Delete
-                                    </a>
-                                }
-                                <a href="/brand/details/@obj.Id"  class="btn btn-info btn-sm ">
-                                    <i class="bi bi-eye-fill"></i>
-                                    Products
-                                </a>
-                           </div>
+                                    @if(actionName == "ShowDeleted")
+                                    {
+                                        <a class="btn btn-success border btn-sm border-dark rounded" href="/brand/Restore/@obj.Id">
+                                             Restore
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <button class="btn btn-danger border btn-sm border-dark rounded" onclick="showDeleteModal(@obj.Id)">
+                                            <i class="bi bi-trash"></i> Delete
+                                        </button>
 
+                                    }
+                                        <a href="/brand/details/@obj.Id" class="btn btn-info btn-sm rounded">
+                                            <i class="bi bi-eye-fill"></i> Products
+                                        </a>
+                                }
+                                else{
+                                    <a href="/brand/details/@obj.Id" class="btn btn-info btn-sm rounded">
+                                            <i class="bi bi-eye-fill"></i> Products
+                                        </a>
+                                }
+                            </div>
                         </td>
                     </tr>
                 }
             </tbody>
         </table>
-
     </div>
 </div>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete this brand?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger rounded" id="confirmDeleteBtn">Yes</button>
+                <button type="button" class="btn btn-secondary rounded" id="closeModal" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function showDeleteModal(brandId) {
+            $('#confirmDeleteBtn').data('brand-id', brandId);
+            $('#deleteModal').modal('show');
+        }
+
+        $('#confirmDeleteBtn').click(function () {
+            var brandId = $(this).data('brand-id');
+            window.location.href = '/brand/delete/' + brandId;
+        });
+    </script>
+}
+<style>
+    .custom-table {
+        background-color: white !important;
+        font-size: 1.25rem;
+    }
+
+        .custom-table th, .custom-table td {
+            color: black !important;
+        }
+
+    .btn-xs {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.50rem;
+        line-height: 1.1;
+    }
+</style>
+

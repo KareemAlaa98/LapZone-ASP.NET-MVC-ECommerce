@@ -24,13 +24,13 @@ namespace E_Commerce_GP.Controllers
         {
             var users = await userManager.Users.ToListAsync();
 
-            var userViewModels = new List<UserViewModel>();
+            var userViewModels = new List<AddUserViewModel>();
             foreach (var user in users)
             {
                 // Get the role(s) of each User
                 var roles = await userManager.GetRolesAsync(user);
 
-                var userViewModel = new UserViewModel
+                var userViewModel = new AddUserViewModel
                 {
                     Id = user.Id,
                     FirstName = user.FirstName,
@@ -74,7 +74,7 @@ namespace E_Commerce_GP.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ManageRoles(UserViewModel userVM)
+        public async Task<IActionResult> ManageRoles(AddUserViewModel userVM)
         {
             var user = await userManager.FindByIdAsync(userVM.Id);
             if (user == null) return NotFound();
@@ -98,64 +98,167 @@ namespace E_Commerce_GP.Controllers
         {
             var roles = await roleManager.Roles.Select(r => new RoleViewModel{RoleId = r.Id, RoleName = r.Name}).ToListAsync();
 
-            var userVM = new UserViewModel()
+            var userVM = new AddUserViewModel()
             {
-                //Roles = roles
+                Roles = roles
             };
             ViewData["listOfRoles"] = roles;
             return View(userVM);
         }
         
         [HttpPost]
-        public async Task<IActionResult> SaveNew(UserViewModel userVM)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SaveNew(AddUserViewModel userVM)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                if(await userManager.FindByNameAsync(userVM.UserName) != null)
-                {
-                    ModelState.AddModelError("UserName", "Username already Exists");
-                    return View("Add", userVM );
-                }
-                if(await userManager.FindByEmailAsync(userVM.Email) != null)
-                {
-                    ModelState.AddModelError("Email", "Email already exists");
-                    return View("Add", userVM );
-                }
+                return View("Add", userVM);
+            }
 
-                var user = new ApplicationUser
-                {
-                    FirstName = userVM.FirstName,
-                    LastName = userVM.LastName,
-                    Email = userVM.Email,
-                    UserName = userVM.UserName,
-                    City = userVM.City,
-                    Street = userVM.Street,
-                    Building_Number = userVM.Building_Number,
-                    Floor_Number = userVM.Floor_Number,
-                    PhoneNumber = userVM.PhoneNumber,
-                    CreatedAt = DateTime.Now
-                };
-                var result = await userManager.CreateAsync(user, userVM.Password);
+            if (!userVM.Roles.Any(r => r.IsSelected))
+            {
+                ModelState.AddModelError("Roles", "Please Select at least one role");
+                return View("Add", userVM);
+            }
 
-                if (!result.Succeeded)
-                {
-                    foreach(var error in result.Errors)
-                    {
-                        ModelState.AddModelError("Roles", error.Description);
-                    }
-                    return View("Add", userVM );
-                }
+            if(await userManager.FindByNameAsync(userVM.UserName) != null)
+            {
+                ModelState.AddModelError("UserName", "Username already Exists");
+                return View("Add", userVM );
+            }
 
-                await userManager.AddToRolesAsync(user, userVM.Roles.Select(e=>e.RoleName).ToArray());
+            if(await userManager.FindByEmailAsync(userVM.Email) != null)
+            {
+                ModelState.AddModelError("Email", "Email already exists");
+                return View("Add", userVM );
+            }
 
+            var existingUserWithPhoneNumber = await userManager.Users.FirstOrDefaultAsync(u => u.PhoneNumber == userVM.PhoneNumber);
 
-                return RedirectToAction("Index");
+            if (existingUserWithPhoneNumber != null)
+            {
+                ModelState.AddModelError("PhoneNumber", "Phone number already exists");
+                return View("Add", userVM);
             }
 
 
-            var roles = roleManager.Roles.Select(r => new RoleViewModel { RoleId = r.Id, RoleName = r.Name }).ToList();
-            ViewData["listOfRoles"] = roles;
-            return View("Add", userVM );
+            var user = new ApplicationUser
+            {
+                FirstName = userVM.FirstName,
+                LastName = userVM.LastName,
+                Email = userVM.Email,
+                EmailConfirmed = true,
+                UserName = userVM.UserName,
+                City = userVM.City,
+                Street = userVM.Street,
+                Building_Number = userVM.Building_Number,
+                Floor_Number = userVM.Floor_Number,
+                PhoneNumber = userVM.PhoneNumber,
+                CreatedAt = DateTime.Now
+            };
+            var result = await userManager.CreateAsync(user, userVM.Password);
+
+            if (!result.Succeeded)
+            {
+                foreach(var error in result.Errors)
+                {
+                    ModelState.AddModelError("Roles", error.Description);
+                }
+                return View("Add", userVM );
+            }
+
+            await userManager.AddToRolesAsync(user, userVM.Roles.Where(r=>r.IsSelected).Select(e=>e.RoleName));
+
+
+            return RedirectToAction("Index");
+
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+            if (user == null) return NotFound();
+
+            var userVM = new EditUserViewModel() 
+            {
+                Id = user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                UserName = user.UserName,
+                Street = user.Street,
+                City = user.City,
+                PhoneNumber = user.PhoneNumber
+            };
+
+            return View(userVM);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SaveEdit(EditUserViewModel userVM)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("Edit", userVM);
+            }
+
+            var user = await userManager.FindByIdAsync(userVM.Id);
+            if (user == null) return NotFound();
+
+            
+            var userWithEmailAlreadyExists = await userManager.FindByEmailAsync(userVM.Email);
+            if(userWithEmailAlreadyExists != null && userWithEmailAlreadyExists.Id != user.Id)
+            {
+                ModelState.AddModelError("Email", "This email is already assigned to another user");
+                return View("Edit", userVM);
+            }    
+            
+            var userWithUserNameAlreadyExists = await userManager.FindByNameAsync(userVM.UserName);
+            if (userWithUserNameAlreadyExists != null && userWithUserNameAlreadyExists.Id != user.Id)
+            {
+                ModelState.AddModelError("UserName", "This username is already assigned to another user");
+                return View("Edit", userVM);
+            }
+
+            var userWithPhoneNumberAlreadyExists = await userManager.Users.FirstOrDefaultAsync(u => u.PhoneNumber == userVM.PhoneNumber);
+            if (userWithPhoneNumberAlreadyExists != null && userWithPhoneNumberAlreadyExists.Id != user.Id)
+            {
+                ModelState.AddModelError("PhoneNumber", "This Phone Number is already assigned to another user");
+                return View("Edit", userVM);
+            }
+
+            user.FirstName = userVM.FirstName;
+            user.LastName = userVM.LastName;
+            user.Email = userVM.Email;
+            user.EmailConfirmed = true;
+            user.UserName = userVM.UserName;
+            user.City = userVM.City;
+            user.Street = userVM.Street;
+            user.Building_Number = userVM.Building_Number;
+            user.Floor_Number = userVM.Floor_Number;
+            user.PhoneNumber = userVM.PhoneNumber;
+            user.ModifiedAt = DateTime.Now;
+            await userManager.UpdateAsync(user);
+            return RedirectToAction("Index");
+
+        }
+
+
+        public async Task<IActionResult> Delete(string id)
+        {
+            var user= await userManager.FindByIdAsync(id);
+            if (user == null)
+                return NotFound();
+
+            var result = await userManager.DeleteAsync(user);
+            if (!result.Succeeded) 
+            {
+                return BadRequest();
+            }
+            return RedirectToAction("Index");
         }
 
     }

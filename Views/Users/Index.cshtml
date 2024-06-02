@@ -1,9 +1,8 @@
-﻿@model IEnumerable<UserViewModel>
+﻿@model IEnumerable<AddUserViewModel>
 
 @{
     ViewData["Title"] = "Users";
 }
-
 
 <div class="card-header bg-primary bg-gradient ml-0 py-3">
     <div class="row">
@@ -13,43 +12,76 @@
     </div>
 </div>
 
-@* <a asp-action="Add" class="btn btn-success btn-sm m-3"> <i class="bi bi-plus-circle"></i> Create User</a> *@
+<a asp-action="Add" class="btn btn-success m-3 rounded">
+    <i class="bi bi-plus-circle"></i> Create User
+</a>
 
-<table class="table table-bordered table-hover table-striped">
-        <thead>
-            <tr class="bg-primary text-white">
-                <th>Actions</th>
-                <th>Full Name</th>
-                <th>UserName</th>
-                <th>Email</th>
-                <th>Phone Number</th>
-                <th>Street</th>
-                <th>City</th>
-                @* <th>Building Number</th>
-                <th>Floor Number</th> *@
-                <th>Role(s)</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            @foreach (var user in Model)
-            {
-                <tr>
-                    <td>
-                        <a href="/users/manageroles/@user.Id" class="btn btn-sm btn-primary mb-2">Manage roles</a>
-                        @* <a href="#" class="btn btn-sm btn-warning"><i class="bi bi-pencil-square"></i></a>
-                        <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></a> *@
-                    </td>
+<table class="table">
+    <thead>
+        <tr class="bg-primary text-white">
+            <th>Actions</th>
+            <th>Full Name</th>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>City</th>
+            <th>Role(s)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td class="row">
+                    <a href="/users/edit/@user.Id" class="btn btn-sm btn-warning col-7 mx-auto rounded">
+                        Edit <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="/users/manageroles/@user.Id" class="btn btn-sm btn-primary col-7 mx-auto mt-2 mb-2 rounded">
+                        Roles
+                    </a>
+                    <button class="btn btn-danger border btn-sm border-dark rounded col-7 mx-auto" onclick="showCancelModal('@user.Id')">
+                        Delete <i class="bi bi-trash"></i>
+                    </button>
+                </td>
                 <td>@user.FirstName @user.LastName</td>
-                    <td>@user.UserName</td>
-                    <td>@user.Email</td>
-                    <td>@user.PhoneNumber</td>
-                    <td>@user.Street</td>
-                    <td>@user.City</td>
-                   @*  <td>@user.Building_Number</td>
-                    <td>@user.Floor_Number</td> *@
-                    <td>@string.Join(", ", user.UserRoles.ToList())</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>@user.PhoneNumber</td>
+                <td>@user.City</td>
+                <td>@string.Join(", ", user.UserRoles.ToList())</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" id="cancelModal" tabindex="-1" aria-labelledby="cancelModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cancelModalLabel">Confirm Deletion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete this user?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger rounded" id="confirmCancelBtn">Yes</button>
+                <button type="button" class="btn btn-secondary rounded" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function showCancelModal(userId) {
+            $('#confirmCancelBtn').data('user-id', userId);
+            $('#cancelModal').modal('show');
+        }
+
+        $('#confirmCancelBtn').click(function () {
+            var userId = $(this).data('user-id');
+            window.location.href = '/users/delete/' + userId;
+        });
+    </script>
+}

@@ -59,7 +59,7 @@
 
                         <!-- Buttons -->
                         <div class="form-group">
-                            <label class="control-label">New Images</label>
+                            <label class="control-label">Images</label>
                             <input asp-for="ProductImages" type="file" class="form-control border-0 shadow" multiple />
                             @if (!isNewProduct)
                             {
@@ -72,8 +72,8 @@
                             }
                         </div>
                         <div class="col-12 pt-2">
-                            <input type="submit" value="Submit" class="btn btn-primary" />
-                            <a asp-action="Index" class="btn btn-outline-primary border">Back to Products</a>
+                            <input type="submit" value="Submit" class="btn btn-primary rounded" />
+                            <a asp-action="Index" class="btn btn-outline-primary border rounded">Back to Products</a>
                         </div>
                     </div>
                 </div>

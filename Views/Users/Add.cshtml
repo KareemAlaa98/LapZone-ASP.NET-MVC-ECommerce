@@ -1,11 +1,117 @@
-﻿@{
-    ViewData["action"] = "SaveNew";
+﻿@model E_Commerce_GP.ViewModels.AddUserViewModel
+
+
+@{
 
     ViewData["Title"] = "Add User";
 }
 
-<partial name="_AddEditUserPartial.cshtml"></partial>
+<h1>@ViewData["Title"]</h1>
+<hr />
+<form asp-controller="Users" asp-action="SaveNew" method="post">
+    <div class="row">
+        <fieldset class="col-md-6">
+            <legend>Personal Information</legend>
+            <div class="row mb-3">
+                <input asp-for="Id" type="hidden">
+                <div class="col">
+                    <label asp-for="FirstName" class="form-label">First Name</label>
+                    <input asp-for="FirstName" class="form-control">
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="LastName" class="form-label">Last Name</label>
+                    <input asp-for="LastName" class="form-control">
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="UserName" class="form-label">Username</label>
+                    <input asp-for="UserName" class="form-control">
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Password" class="form-label">Password</label>
+                    <input asp-for="Password" class="form-control">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="ConfirmPassword" class="form-label">Confirm Password</label>
+                    <input asp-for="ConfirmPassword" class="form-control">
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="col-md-6">
+            <legend>Address</legend>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Street" class="form-label">Street</label>
+                    <input asp-for="Street" class="form-control">
+                    <span asp-validation-for="Street" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="City" class="form-label">City</label>
+                    <input asp-for="City" class="form-control">
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Building_Number" class="form-label">Building Number</label>
+                    <input asp-for="Building_Number" class="form-control">
+                    <span asp-validation-for="Building_Number" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label asp-for="Floor_Number" class="form-label">Floor Number</label>
+                    <input asp-for="Floor_Number" class="form-control">
+                    <span asp-validation-for="Floor_Number" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                    <input asp-for="PhoneNumber" class="form-control">
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <hr />
+    <fieldset>
+        <legend>Roles</legend>
+        <div class="row mb-3">
+            @for (int i = 0; i < Model.Roles.Count; i++)
+            {
+                <div class="form-check m-1">
+                    <input type="hidden" asp-for="@Model.Roles[i].RoleId" />
+                    <input type="hidden" asp-for="@Model.Roles[i].RoleName" />
+                    <input asp-for="@Model.Roles[i].IsSelected" class="form-check-input" />
+                    <label class="form-check-label" asp-for="@Model.Roles[i].IsSelected">
+                        @Model.Roles[i].RoleName
+                    </label>
+                    <span asp-validation-for="Roles" class="text-danger"></span>
+                </div>
+            }
+        </div>
+    </fieldset>
+    <div class="row mb-3">
+        <div class="col">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</form>
+
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial.cshtml"></partial>
+    @* @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} *@
+    <partial name="_ValidationScriptsPartial.cshtml" />
 }

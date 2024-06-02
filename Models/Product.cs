@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace E_Commerce_GP.Models
 {
@@ -21,6 +22,8 @@ namespace E_Commerce_GP.Models
 
         public decimal AverageRating { get; set; } = 0;
 
+        public bool IsDeleted { get; set; } = false;
+
         [Display(Name = "Created At")]
         public DateTime? CreatedAt { get; set; }
 
@@ -40,5 +43,19 @@ namespace E_Commerce_GP.Models
         
         public List<ProductImage> ProductImages { get; set; }
         public List<Review> Reviews { get; set; }
+
+
+        [NotMapped]
+        public decimal DiscountedPrice
+        {
+            get
+            {
+                if (Discount != null && Discount.DiscountPercent > 0)
+                {
+                    return Price - (Price * Discount.DiscountPercent / 100);
+                }
+                return Price;
+            }
+        }
     }
 }

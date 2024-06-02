@@ -83,7 +83,7 @@
                     }
                     else
                     {
-                    <a href="/cart/addTocart/@Model.Id" class="btn btn-outline-success btn-sm col-2">
+                    <a href="/cart/addTocart/@Model.Id" class="btn btn-success btn-sm col-2 rounded">
                         Add To Cart<i class="bi bi-cart-plus me-1"></i>
                     </a>
                     }
@@ -93,20 +93,18 @@
         </div>
     </div>
 
-<div class="row">
+<div class="row m-4">
     <div class="col-2">
-        <a asp-action="Index" class="btn btn-outline-primary bg-gradient fw-semibold btn-sm">
-            Back to Products
-        </a>
+        <a asp-action="Index" class="btn btn-primary btn-sm rounded">Back to products</a>
     </div>
     <div class="col-2">
-        <a asp-action="AddComment" asp-route-productId="@Model.Id" class="btn btn-primary btn-sm">Leave a Review</a>
+        <a asp-action="AddComment" asp-route-productId="@Model.Id" class="btn btn-info btn-sm rounded">Leave a Review</a>
     </div>
 </div>
 
 @if (reviews != null)
 {
-    <h2 class="m-2">Product Reviews</h2>
+    <h2 class="m-2 mt-5">Product Reviews</h2>
     <ul class="review-list">
         @foreach (var review in reviews)
         {

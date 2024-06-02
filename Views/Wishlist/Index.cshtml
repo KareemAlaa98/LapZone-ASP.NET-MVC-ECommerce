@@ -6,7 +6,6 @@
 <div class="card-header bg-secondary bg-gradient ml-0 py-3 text-light" style="text-align: center;">
     <div>
         <h1 style="font-size:40px;margin-right:10px;display: inline;color:white;"> Wishlist</h1>
-        <span style="display: inline;font-size:40px"><i class="bi bi-heart"></i></span>
     </div>
 </div>
 @if (Model.Products.Any())
@@ -59,7 +58,7 @@
                         }
                         else
                         {
-                            <a href="/cart/addTocart/@item.Id" class="btn btn-outline-success btn-sm">
+                            <a href="/cart/addTocart/@item.Id" class="btn btn-outline-success rounded btn-sm">
                                 <small>Add To Cart</small><i class="bi bi-cart-plus me-1"></i>
                             </a>
                         }

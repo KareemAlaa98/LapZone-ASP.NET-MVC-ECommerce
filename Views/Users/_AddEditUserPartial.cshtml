@@ -1,8 +1,5 @@
-﻿@model E_Commerce_GP.ViewModels.UserViewModel
+﻿@model E_Commerce_GP.ViewModels.AddUserViewModel
 
-@{
-    SelectList listOfRoles = new SelectList(ViewBag.listOfRoles, "RoleId", "RoleName");
-}
 
 <h1>@ViewData["Title"]</h1>
 <hr />
@@ -11,7 +8,7 @@
         <fieldset class="col-md-6">
             <legend>Personal Information</legend>
             <div class="row mb-3">
-                @* <input asp-for="Id" type="hidden"> *@
+                <input asp-for="Id" type="hidden">
                 <div class="col">
                     <label asp-for="FirstName" class="form-label">First Name</label>
                     <input asp-for="FirstName" class="form-control">
@@ -83,19 +80,24 @@
             </div>
         </fieldset>
     </div>
+        <hr />
+    <fieldset >
+        <legend>Roles</legend>
     <div class="row mb-3">
-        <div class="col">
-            <label asp-for="UserRoles" class="form-label">Roles</label>
-            <select asp-for="UserRoles" asp-items="listOfRoles" class="form-select" multiple></select>
-            <span asp-validation-for="UserRoles" class="text-danger"></span>
-        </div>
-        @* <div class="row mb-3">
-        <div class="col">
-            <label asp-for="Roles" class="form-label">Roles</label>
-            <select asp-for="Roles" asp-items="listOfRoles" class="form-select" multiple></select>
-            <span asp-validation-for="Roles" class="text-danger"></span>
-        </div> *@
+        @for (int i = 0; i < Model.Roles.Count; i++)
+        {
+            <div class="form-check m-1">
+                <input type="hidden" asp-for="@Model.Roles[i].RoleId" />
+                <input type="hidden" asp-for="@Model.Roles[i].RoleName" />
+                <input asp-for="@Model.Roles[i].IsSelected" class="form-check-input" />
+                <label class="form-check-label" asp-for="@Model.Roles[i].IsSelected">
+                    @Model.Roles[i].RoleName
+                </label>
+                    <span asp-validation-for="Roles" class="text-danger"></span>
+            </div>
+        }
     </div>
+    </fieldset>
     <div class="row mb-3">
         <div class="col">
             <button type="submit" class="btn btn-primary">Submit</button>

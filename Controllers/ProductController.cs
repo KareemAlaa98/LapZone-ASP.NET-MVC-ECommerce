@@ -39,8 +39,21 @@ namespace E_Commerce_GP.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            ViewData["actionUrl"] = "Index";
             var allProducts = productRepository.ReadAll();
+            ViewData["listOfBrands"] = brandRepository.ReadAllBrand();
             return View(allProducts);
+        }
+        
+        
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public IActionResult ShowDeleted()
+        {
+            ViewData["actionUrl"] = "ShowDeleted";
+            var deletedProducts = productRepository.GetDeletedProducts();
+            ViewData["listOfBrands"] = brandRepository.ReadAllBrand();
+            return View(deletedProducts) ;
         }
 
 
@@ -231,6 +244,22 @@ namespace E_Commerce_GP.Controllers
             return RedirectToAction("Index");
         }
 
+        
+        [Authorize(Roles = "Admin")]
+        public IActionResult Restore(int id)
+        {
+            try
+            {
+                productRepository.Restore(id);
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = ex.Message;
+                return RedirectToAction("ShowDeleted");
+            }
+        }
+
 
         [AllowAnonymous]
         public IActionResult Details(int id)
@@ -246,14 +275,26 @@ namespace E_Commerce_GP.Controllers
         }
 
 
-        [HttpPost]
+        [HttpGet]
         [AllowAnonymous]
         public IActionResult Filter(string? brandName = null, decimal? minPrice = null, decimal? maxPrice = null, int? rating = null)
         {
-            var filteredResults = productRepository.Filter(brandName, minPrice, maxPrice, rating);
+            var filteredResults = productRepository.Filter(brandName, minPrice, maxPrice, rating); 
+            ViewData["listOfBrands"] = brandRepository.ReadAllBrand();
+            
+            var filters = new Dictionary<string, string>
+            {
+                ["Brand"] = !string.IsNullOrEmpty(brandName) ? brandName : string.Empty,
+                ["Min Price"] = !minPrice.HasValue || minPrice == null ? string.Empty : minPrice.Value.ToString(),
+                ["Max Price"] = !maxPrice.HasValue || maxPrice == null ? string.Empty : maxPrice.Value.ToString(),
+                ["Rating"] = !rating.HasValue || rating == null ? string.Empty: rating.Value.ToString()
+            };
+
+            ViewData["listOfFilters"] = filters;  
             return View(filteredResults);
         }
-
+        
+    
 
         [Authorize]
         public IActionResult AddComment(int productId)

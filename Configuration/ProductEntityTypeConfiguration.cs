@@ -13,6 +13,11 @@ namespace E_Commerce_GP.Configuration
 
             builder.HasCheckConstraint("CK_price_is_positive", "[Price] > 0");
             builder.HasCheckConstraint("CK_stock_is_positive", "[QuantityInStock] >= 0");
+
+            builder.HasOne(p => p.Discount)
+            .WithMany()
+            .HasForeignKey(p => p.DiscountId)
+            .OnDelete(DeleteBehavior.SetNull);
         }
     }
 }

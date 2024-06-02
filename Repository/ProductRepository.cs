@@ -16,9 +16,15 @@ namespace E_Commerce_GP.Repository
         }
 
 
-        public Product GetProductByName(string name)
+        public List<Product> GetDeletedProducts()
         {
-            return context.Products.FirstOrDefault(e => e.Name == name);
+            return context.Products
+                .Include(e => e.Brands)
+                .Include(c => c.Category)
+                .Include(v => v.Discount)
+                .Include(i => i.ProductImages)
+                .Where(e => e.IsDeleted)
+                .ToList();
         }
 
         //Read
@@ -29,6 +35,7 @@ namespace E_Commerce_GP.Repository
                 .Include(c => c.Category)
                 .Include(v => v.Discount)
                 .Include(i=>i.ProductImages)
+                .Where(e => !e.IsDeleted)
                 .ToList();
         }
         public Product ReadById(int id)
@@ -78,14 +85,35 @@ namespace E_Commerce_GP.Repository
             var product = context.Products.Find(id);
             if (product != null)
             {
-                context.Products.Remove(product);
+                product.IsDeleted = true;
                 context.SaveChanges();
+            }
+        }
+        public void Restore(int id)
+        {
+            var product = context.Products.Include(e=>e.Brands).FirstOrDefault(e=>e.Id == id);
+            if (product != null)
+            {
+                if (product.Brands.IsDeleted)
+                {
+                    throw new Exception("The Brand of this product is deleted, you Must restore it first.");
+                }
+                else
+                {
+                    product.IsDeleted = false;
+                    context.SaveChanges();
+                }
             }
         }
 
         public List<Product> Filter(string? brandName = null, decimal? minPrice = null, decimal? maxPrice = null, int? rating = null)
         {
-            var query = context.Products.Include(e=>e.Brands).AsQueryable();
+            var query = context.Products
+                .Include(e => e.Discount)
+                .Include(e => e.Brands)
+                .Include(e => e.ProductImages)
+                .Where(e => !e.IsDeleted)
+                .AsQueryable();
 
             // Brand Filter
             if (!string.IsNullOrEmpty(brandName))
@@ -93,46 +121,30 @@ namespace E_Commerce_GP.Repository
                 query = query.Where(e => e.Brands.Name == brandName);
             }
 
-            // Price Filter
-            if (minPrice.HasValue && maxPrice.HasValue)
-            {
-                query = query.Where(e => e.Price >= minPrice.Value && e.Price <= maxPrice.Value);
-            }
-            else if (minPrice.HasValue)
-            {
-                query = query.Where(e => e.Price >= minPrice.Value);
-            }
-            else if (maxPrice.HasValue)
-            {
-                query = query.Where(e => e.Price <= maxPrice.Value);
-            }
-
             // Rating Filter
             if (rating.HasValue)
             {
-                //if (rating > 5 || rating <= 0)
-                //{
-                //    throw new Exception("Rating should be between 1 and 5");
-                //}
                 query = query.Where(e => e.AverageRating >= rating && e.AverageRating < rating + 1);
             }
 
-            // Execute the query and convert the results to a list of Products
-            List<Product> filterResults = query.Include(e => e.ProductImages).Include(e=>e.Brands).Include(e => e.Discount).Select(item => new Product
-            {
-                Id = item.Id,
-                Name = item.Name,
-                Description = item.Description,
-                Price = item.Price,
-                QuantityInStock = item.QuantityInStock,
-                BrandId = item.BrandId,
-                DiscountId = item.DiscountId,
-                Discount = item.Discount,
-                AverageRating = item.AverageRating,
-                ProductImages = item.ProductImages
-            }).ToList();
+            // Price Filter
+            var products = query.ToList();
 
-            return filterResults;
+            // Apply price filters
+            if (minPrice.HasValue && maxPrice.HasValue)
+            {
+                products = products.Where(e => e.DiscountedPrice >= minPrice.Value && e.DiscountedPrice <= maxPrice.Value).ToList();
+            }
+            else if (minPrice.HasValue)
+            {
+                products = products.Where(e => e.DiscountedPrice >= minPrice.Value).ToList();
+            }
+            else if (maxPrice.HasValue)
+            {
+                products = products.Where(e => e.DiscountedPrice <= maxPrice.Value).ToList();
+            }
+
+            return products;
         }
 
 

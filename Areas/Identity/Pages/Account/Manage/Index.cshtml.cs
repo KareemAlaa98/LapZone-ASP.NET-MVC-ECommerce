@@ -58,9 +58,14 @@ namespace E_Commerce_GP.Areas.Identity.Pages.Account.Manage
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             /// [Required, MaxLength(100)]
+            [Required, MaxLength(100)]
+            [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Only letters (lowercase or uppercase) are allowed.")]
+            [Display(Name = "First Name")]
             public string FirstName { get; set; }
 
             [Required, MaxLength(100)]
+            [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Only letters (lowercase or uppercase) are allowed.")]
+            [Display(Name = "Last Name")]
             public string LastName { get; set; }
 
             [Required, MaxLength(100)]
@@ -70,16 +75,19 @@ namespace E_Commerce_GP.Areas.Identity.Pages.Account.Manage
             public string City { get; set; }
 
             [Required]
+            [Display(Name = "Building Number")]
+            [Range(0, int.MaxValue, ErrorMessage = "Building Number Can't be negative")]
             public int Building_Number { get; set; }
 
             [Required]
+            [Display(Name = "Floor Number")]
+            [Range(0, int.MaxValue, ErrorMessage = "Floor Number Can't be negative")]
             public int Floor_Number { get; set; }
 
             [Required, MaxLength(11)]
+            [RegularExpression(@"^01[0-2|5][0-9]{8}$", ErrorMessage = "Please enter a valid Egyptian phone number.")]
             public string PhoneNumber { get; set; }
-            //[Phone]
-            //[Display(Name = "Phone number")]
-            //public string PhoneNumber { get; set; }
+          
         }
 
         private async Task LoadAsync(ApplicationUser user)
@@ -171,22 +179,14 @@ namespace E_Commerce_GP.Areas.Identity.Pages.Account.Manage
                 var existingUser = await _userManager.Users.FirstOrDefaultAsync(u => u.PhoneNumber == Input.PhoneNumber);
                 if (existingUser != null)
                 {
-                    ModelState.AddModelError(string.Empty, "Phone number is already registered.");
+                    ModelState.AddModelError("Input.PhoneNumber", "Phone number is already registered.");
+                    await LoadAsync(user);
                     return Page();
                 }
                 user.PhoneNumber = Input.PhoneNumber;
                 await _userManager.UpdateAsync(user);
             }
-            //if (Input.PhoneNumber != phoneNumber)
-            //{
-            //    var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
-            //    if (!setPhoneResult.Succeeded)
-            //    {
-            //        StatusMessage = "Unexpected error when trying to set phone number.";
-            //        return RedirectToPage();
-            //    }
-            //}
-
+   
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";
             return RedirectToPage();

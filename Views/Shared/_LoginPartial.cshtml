@@ -6,8 +6,9 @@
 @if (SignInManager.IsSignedIn(User))
 {
     <li class="nav-item mx-0" >
-        <a  class="nav-link " asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@User.Identity?.Name!</a>
+        <a  class="nav-link " asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><small>Welcome @User.Identity?.Name!</small></a>
     </li>
+
     <li class="nav-item mx-0">
         <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
             <button  type="submit" class="nav-link">LOGOUT</button>
